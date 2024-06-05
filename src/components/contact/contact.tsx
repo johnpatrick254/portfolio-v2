@@ -3,6 +3,7 @@ import React from "react";
 import ContactCard from "./contactcard";
 import { contacts } from "@/lib/constants";
 import ContactForm from "./contactform";
+import TransitionContainer from "../transitioncontainer";
 const caveat = Caveat({ subsets: ["latin"] });
 export default function Contact() {
   return (
@@ -23,17 +24,22 @@ export default function Contact() {
       </div>
       <div className="flex w-full flex-col gap-y-6 md:flex-row md:items-center md:justify-center md:gap-6">
         <div className="flex flex-col gap-y-6 self-start">
-          {contacts.map((contact) => (
-            <ContactCard
-              key={contact.title}
-              title={contact.title}
-              description={contact.description}
-              Icon={contact.Icon}
-            />
-          ))}
+          <TransitionContainer variant="LEFT">
+            {contacts.map((contact) => (
+              <ContactCard
+                key={contact.title}
+                title={contact.title}
+                description={contact.description}
+                Icon={contact.Icon}
+              />
+            ))}
+          </TransitionContainer>
         </div>
+
         <div>
-          <ContactForm />
+          <TransitionContainer variant="RIGHT">
+            <ContactForm />
+          </TransitionContainer>
         </div>
       </div>
     </section>

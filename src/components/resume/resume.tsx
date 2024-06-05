@@ -2,6 +2,7 @@ import { Caveat } from "next/font/google";
 import React from "react";
 import ResumeCard from "./resumecard";
 import Link from "next/link";
+import TransitionContainer from "../transitioncontainer";
 const caveat = Caveat({ subsets: ["latin"] });
 export default function Resume() {
   return (
@@ -19,28 +20,32 @@ export default function Resume() {
           </div>
         </div>
         <div className="w-full md:flex md:flex-row   ">
-          <div className="flex w-full flex-col items-center justify-center p-8">
-            <div className=" w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">
-              <h3 className="mx-auto w-max">Education</h3>
+          <TransitionContainer variant="LEFT">
+            <div className="flex w-full flex-col items-center justify-center p-8">
+              <div className=" w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">
+                <h3 className="mx-auto w-max">Education</h3>
+              </div>
+              <ResumeCard index={0} key={1} />
+              <ResumeCard index={1} key={2} />
+              <ResumeCard index={2} key={3} />
             </div>
-            <ResumeCard index={0} />
-            <ResumeCard index={1} />
-            <ResumeCard index={2} />
-          </div>
-          <div className="flex w-full flex-col items-center justify-center p-8">
-            <div className="w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">
-              <h3 className="mx-auto w-max">Experience</h3>
+          </TransitionContainer>
+          <TransitionContainer variant="RIGHT">
+            <div className="flex w-full flex-col items-center justify-center p-8">
+              <div className="w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">
+                <h3 className="mx-auto w-max">Experience</h3>
+              </div>
+              <ResumeCard index={0} key={4} />
+              <ResumeCard index={1} key={5} />
+              <ResumeCard index={2} key={6} />
             </div>
-            <ResumeCard index={0} />
-            <ResumeCard index={1} />
-            <ResumeCard index={2} />
-          </div>
+          </TransitionContainer>
         </div>
         <span className=" hero-pill mx-auto my-2 flex w-max items-center justify-center  space-x-2 rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none">
           <Link href="#">Download CV</Link>
         </span>
       </div>
-      
+
     </section>
   );
 }

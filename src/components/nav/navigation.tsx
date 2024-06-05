@@ -18,9 +18,9 @@ const Header = () => {
     <header className="fixed inset-x-0 top-0 z-50 h-fit w-full border-border  backdrop-blur">
       <div className="mx-auto max-w-7xl px-4">
         {/* mobile */}
-        <div className="my-2 flex flex-row items-center justify-between  md:hidden">
+        <div className="my-2 flex flex-row items-center justify-between  xl:hidden">
           <Link href="/">
-            <Image src={brandLogo} alt="logo" width={40} height={40} />
+            <Image quality={100} src={brandLogo} alt="logo" width={40} height={40} />
           </Link>
           <div className="flex flex-row items-center gap-x-2">
             <ThemeToggle />
@@ -41,9 +41,9 @@ const Header = () => {
         </div>
 
         {/* desktop */}
-        <div className="hidden flex-row items-center justify-between py-3 md:flex">
+        <div className="hidden flex-row items-center justify-between py-3 xl:flex">
           <Link href="/" className="inline-flex">
-            <Image src={brandLogo} alt="logo" width={50} height={50} />
+            <Image quality={100} src={brandLogo} alt="logo" width={50} height={50} />
           </Link>
           <div className="flex flex-row items-center gap-2">
             <NavbarDesktop />

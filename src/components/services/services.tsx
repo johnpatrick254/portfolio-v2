@@ -4,6 +4,7 @@ import { ServiceCarousel } from "./servicecarousel";
 import { Carousel } from "../ui/carousel";
 import { services } from "@/lib/constants";
 import ServiceCard from "./ServiceCard";
+import TransitionContainer from "../transitioncontainer";
 const caveat = Caveat({ subsets: ["latin"] });
 
 export default function Services() {
@@ -23,6 +24,9 @@ export default function Services() {
                     </span>
                 </div>
             </div>
+            <TransitionContainer variant="TOP">
+
+            
             <Carousel className="w-[400px] lg:hidden">
                 <ServiceCarousel />
             </Carousel>
@@ -36,6 +40,7 @@ export default function Services() {
                     />
                 ))}
             </div>
+            </TransitionContainer>
         </section>
     );
 }

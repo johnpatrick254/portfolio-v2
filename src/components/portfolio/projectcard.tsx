@@ -58,6 +58,7 @@ export default function ProjectCard({
         <Image
           alt="deco"
           src={pt2}
+          quality={100}
           height={50}
           width={50}
           className="absolute bottom-[-1rem] right-[-1rem] h-16 w-16 object-cover"

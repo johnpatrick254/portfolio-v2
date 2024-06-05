@@ -1,6 +1,7 @@
 import React from "react";
 import SkillSet from "./skillset";
 import { skillSets } from "@/lib/constants";
+import TransitionContainer from "../transitioncontainer";
 
 export default function Skills() {
   return (
@@ -13,14 +14,17 @@ export default function Skills() {
           <h2 className="my-2 text-2xl font-bold">Professional Skills</h2>
         </div>
         {skillSets.map((skillSet) => (
+
           <SkillSet
             key={skillSet.name}
             name={skillSet.name}
             data={skillSet.data}
           />
+
+
         ))}
       </div>
-      
+
     </section>
   );
 }

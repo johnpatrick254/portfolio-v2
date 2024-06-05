@@ -36,6 +36,7 @@ export default function ServiceCard({
         alt="deco"
         src={pt2}
         height={50}
+        quality={100}
         width={50}
         className="absolute bottom-[-2rem] right-[-1.5rem] h-36 w-36 "
       />
