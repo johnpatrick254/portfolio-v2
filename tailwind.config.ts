@@ -14,11 +14,11 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        xs: '375px',
-        sm: '480px',
-        md: '768px',
-        lg: '976px',
-        xl: '1440px',
+        xs: "375px",
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
       },
     },
     extend: {
@@ -89,7 +89,7 @@ const config = {
         pill: "5px 3px rgba(var(--box-shadow))",
       },
       objectPosition: {
-        'center-center': '50% 50%',
+        "center-center": "50% 50%",
       },
     },
   },

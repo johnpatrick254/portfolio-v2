@@ -15,10 +15,10 @@ import { NavbarMobile, NavbarDesktop } from "./nav";
 
 const Header = () => {
   return (
-    <header className="fixed border-border inset-x-0 top-0 z-50 h-fit w-full  backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 h-fit w-full border-border  backdrop-blur">
       <div className="mx-auto max-w-7xl px-4">
         {/* mobile */}
-        <div className="flex flex-row items-center justify-between py-2 min-h-14 md:hidden">
+        <div className="my-2 flex flex-row items-center justify-between  md:hidden">
           <Link href="/">
             <Image src={brandLogo} alt="logo" width={40} height={40} />
           </Link>
