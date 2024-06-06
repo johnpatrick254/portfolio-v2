@@ -13,8 +13,8 @@ export default function page() {
     (project) => project.category === search,
   );
   return (
-    <section className='w-full flex  pt-24 pb-16 min-h-screen bg-gradient-center '>
       <Suspense>
+    <section className='w-full flex  pt-24 pb-16 min-h-screen bg-gradient-center '>
         <div className="flex  w-full flex-col items-center gap-y-3 max-w-7xl mx-auto md:ml-12  lg:ml-36 2xl:ml-[20%] 3xl:ml-[28%]">
           <nav className="mr-[20%] flex min-h-[26px] w-full justify-center gap-x-4 text-xs font-bold uppercase tracking-wider ">
             <span
@@ -75,7 +75,7 @@ export default function page() {
             </div>
           </TransitionContainer>
         </div>
-      </Suspense>
     </section>
+      </Suspense>
   )
 }
