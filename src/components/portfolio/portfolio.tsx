@@ -29,7 +29,7 @@ export default function Portfolio() {
           </span>
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-center gap-y-3">
+      <div className="flex w-full flex-col items-center justify-center gap-y-3 ">
         <TransitionContainer variant="LEFT">
           <nav className="mx-auto flex min-h-[26px] w-full justify-center gap-x-4 text-xs font-bold uppercase tracking-wider ">
             <span
@@ -39,7 +39,7 @@ export default function Portfolio() {
               All
             </span>
             <span
-              onClick={() => setActive("personal")}
+              onClick={() => { setActive("personal"); console.log(activeProjects) }}
               className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${active === "personal" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
             >
               Personal
@@ -53,38 +53,44 @@ export default function Portfolio() {
           </nav>
         </TransitionContainer>
         <TransitionContainer variant="TOP">
-          <div className="flex flex-wrap items-center justify-center gap-3   md:justify-normal lg:flex-nowrap md:gap-x-3 xl:gap-x-14">
-            {active !== "all"
-              ? activeProjects.map((project) => {
-                return project.projects.map((app, i) => {
-                  if (i >= 4) return null;
-                  return (
-                    <ProjectCard
-                      category={app.category}
-                      desc={app.desc}
-                      img={app.img}
-                      link={app.link}
-                      title={app.title}
-                      key={app.title}
-                    />
-                  );
-                });
-              })
-              : projects.map((project) => {
-                return project.projects.map((app, i) => {
-                  if (i >= 4) return null;
-                  return (
-                    <ProjectCard
-                      category={app.category}
-                      desc={app.desc}
-                      img={app.img}
-                      link={app.link}
-                      title={app.title}
-                      key={app.title}
-                    />
-                  );
-                });
-              })}
+          <div className="flex flex-wrap items-center justify-center gap-3 md:justify-normal 2xl:flex-nowrap md:ml-5 lg:ml-32 lg:gap-6 xl:ml-60 2xl:ml-0">
+            {
+              active !== "all"
+                ?
+                activeProjects.map((project) => {
+                  return project.projects.map((app, i) => {
+                    if (i < 4) {
+                      return (
+                        <ProjectCard
+                          category={app.category}
+                          desc={app.desc}
+                          img={app.img}
+                          link={app.link}
+                          title={app.title}
+                          key={app.title}
+                          code={app.code}
+                        />
+                      );
+                    }
+                  });
+                })
+                : projects.map((project) => {
+                  return project.projects.map((app, i) => {
+                    if (i < 3) {
+                      return (
+                        <ProjectCard
+                          category={app.category}
+                          desc={app.desc}
+                          img={app.img}
+                          link={app.link}
+                          title={app.title}
+                          key={app.title}
+                          code={app.code}
+                        />
+                      );
+                    }
+                  });
+                })}
           </div>
         </TransitionContainer>
         <span className=" hero-pill my-2 flex items-center  justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold uppercase shadow-pill transition-shadow duration-200 ease-in-out  hover:shadow-none">

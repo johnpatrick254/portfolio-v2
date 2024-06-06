@@ -31,10 +31,19 @@ import vercel from "../../public/vercel.svg";
 import firebase from "../../public/images/firebase-svgrepo-com.svg";
 import { ServiceCardProp } from "@/components/services/ServiceCard";
 import { ProjectCardProps } from "@/components/portfolio/projectcard";
-import ticket from "../../public/images/tciketss.png";
 import alpine from "../../public/images/Alpine.js.svg";
 import { ContactCardProps } from "@/components/contact/contactcard";
 import { Mail, Map, User, Contact } from "lucide-react";
+
+import ecom from "../../public/images/portfolio/ecommerce.png";
+import ticket from "../../public/images/portfolio/ticket.png";
+import frontend from "../../public/images/portfolio/frontendlanding.png";
+import gomeal from "../../public/images/portfolio/gomeal.png";
+import google from "../../public/images/portfolio/google clone.png";
+import jobboard from "../../public/images/portfolio/jobboards.png";
+import school from "../../public/images/portfolio/school-landing.png";
+import taskmanager from "../../public/images/portfolio/taskmanager.png";
+import { ResumeCardProps } from "@/components/resume/resumecard";
 
 export const services: ServiceCardProp[] = [
   {
@@ -61,12 +70,12 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Typescript",
         src: typescript,
-        desc: "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript",
+        desc: "TypeScript is a  high-level programming language that adds static typing with optional type annotations to JavaScript.",
       },
       {
         name: "Javascript",
         src: js,
-        desc: "JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS",
+        desc: "JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS.",
       },
       {
         name: "PHP",
@@ -91,12 +100,12 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Nestjs",
         src: nestjs,
-        desc: "A progressive Node.js framework for building efficient, reliable and scalable server-side applications.",
+        desc: "A progressive Node.js framework for building efficient, reliable, and scalable server-side applications.",
       },
       {
         name: "Express",
         src: express,
-        desc: "Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License.",
+        desc: "Express.js is a back-end web application framework for building RESTful APIs with Node.js.",
       },
       {
         name: "Firebase",
@@ -111,7 +120,7 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Postgresql",
         src: postgres,
-        desc: "PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.",
+        desc: "PostgreSQL is a free and open-source relational database management system emphasizing extensibility and SQL compliance.",
       },
       {
         name: "MYSQL",
@@ -121,7 +130,7 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "mongoDB",
         src: mongo,
-        desc: "MongoDB is a source-available, cross-platform, document-oriented database program. Classified as a NoSQL database product, MongoDB utilizes JSON-like documents with optional schemas.",
+        desc: "MongoDB is a NoSQL document-oriented database program that utilizes JSON-like documents with optional schemas.",
       },
       {
         name: "Prisma ORM",
@@ -131,12 +140,12 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "TypeORM",
         src: typorm,
-        desc: "TypeORM is an ORM that can run in NodeJS, Browser, Cordova, PhoneGap, Ionic, React Native, NativeScript, Expo, and Electron platforms and can be used with TypeScript and JavaScript (ES2021)",
+        desc: "TypeORM is a type-safe ORM that can be used with TypeScript and JavaScript (ES2021).",
       },
       {
-        name: "Eloquent ORM",
+        name: "Eloquent",
         src: laravel,
-        desc: "The Eloquent ORM included with Laravel provides a beautiful, simple ActiveRecord implementation for working with your database.",
+        desc: "Eloquent ORM included with Laravel provides a simple ActiveRecord implementation for working with your database.",
       },
     ],
   },
@@ -146,22 +155,22 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Nextjs",
         src: nextjs,
-        desc: "Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.",
+        desc: "Next.js is a web framework providing React-based web applications with server-side rendering and static website generation.",
       },
       {
         name: "Remixjs",
         src: remix,
-        desc: "Remix is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience.",
+        desc: "Remix is a full stack web framework with server-side rendering and static website generation.",
       },
       {
         name: "Reactjs",
         src: react,
-        desc: "React is a free and open-source front-end JavaScript library for building user interfaces based on components",
+        desc: "React is a free and open-source front-end JavaScript library for building user interfaces based on components.",
       },
       {
         name: "Blade",
         src: laravel,
-        desc: "Blade is the simple, yet powerful templating engine provided with Laravel",
+        desc: "Blade is the simple, yet powerful templating engine provided with Laravel.",
       },
       {
         name: "Tailwind",
@@ -176,12 +185,12 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Redux Toolkit",
         src: redux,
-        desc: "Redux is an open-source JavaScript library for managing and centralizing application state",
+        desc: "Redux is an open-source JavaScript library for managing and centralizing application state.",
       },
       {
         name: "Tanstack Query",
         src: query,
-        desc: "TanStack Query gives you declarative, always-up-to-date auto-managed queries and mutations that directly improve both your developer and user experiences.",
+        desc: "TanStack Query is state management library for React based apps.",
       },
       {
         name: "shadcn/UI",
@@ -191,12 +200,12 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Material UI",
         src: miui,
-        desc: "Material UI offers a wide variety of high quality components that have allowed us to ship features faster.",
+        desc: "Material UI offers a wide variety of high-quality components that have allowed us to ship features faster.",
       },
       {
         name: "Slatejs",
         src: slate,
-        desc: "Slate is a completely customizable framework for building rich text editors",
+        desc: "Slate is a completely customizable framework for building rich text editors.",
       },
       {
         name: "AlpineJs",
@@ -211,7 +220,7 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "React Native Expo",
         src: native,
-        desc: "Expo and EAS are an ecosystem of tools used for developing and deploying universal native apps with React that run on Android, iOS, and the web.",
+        desc: "Expo and EAS are an ecosystem of tools used for developing universal native apps with React that run on Android, iOS, and the web.",
       },
     ],
   },
@@ -221,32 +230,32 @@ export const skillSets: SkillSetProps[] = [
       {
         name: "Git",
         src: git,
-        desc: "Git is a distributed version control system that tracks versions of files. It is often used to control source code by programmers collaboratively developing software.",
+        desc: "Git is a distributed version control system used to control source code by programmers collaboratively developing software.",
       },
       {
         name: "Docker",
         src: docker,
-        desc: "Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
+        desc: "Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers.",
       },
       {
         name: "Nginx",
         src: nginx,
-        desc: "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
+        desc: "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy, and HTTP cache.",
       },
       {
         name: "AWS",
         src: aws,
-        desc: "Amazon Web Services, Inc. is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis",
+        desc: "Amazon Web Services provides on-demand cloud computing platforms and APIs on a metered, pay-as-you-go basis.",
       },
       {
         name: "Digital Ocean",
         src: doc,
-        desc: "DigitalOcean Droplets are simple, scalable virtual machines for all your web hosting and VPS hosting needs",
+        desc: "DigitalOcean provides simple, scalable virtual machines for all your web hosting and VPS hosting needs.",
       },
       {
         name: "Vercel",
         src: vercel,
-        desc: "Vercel is the Frontend Cloud. Build, scale, and secure a faster, personalized web",
+        desc: "Vercel is the Frontend Cloud. Build, scale, and secure a faster, personalized web.",
       },
     ],
   },
@@ -256,38 +265,84 @@ export const projects: {
   category: "personal" | "all" | "collaborations";
   projects: ProjectCardProps[];
 }[] = [
-  {
-    category: "personal",
-    projects: [
-      {
-        category: "personal",
-        desc: "A ticket based helpdesk webapp built with Nextjs frontend and php backend where users can raise support tickets",
-        img: ticket,
-        link: "https://ticket-helpdesk-sigma.vercel.app",
-        title: "Ticket Helpdesk",
-      },
-      {
-        category: "personal",
-        desc: "A food ordering mobile app built with react-native/expo for ordering food from vendors displayed on a map and pay with cards",
-        img: ticket,
-        link: "https://github.com/johnpatrick254/GoMeals",
-        title: "Go Meals",
-      },
-    ],
-  },
-  {
-    category: "collaborations",
-    projects: [
-      {
-        category: "Collaboration",
-        desc: "A simple school management system with dashboards for admins,staff and students. Built with Nestjs and Nextjs",
-        img: ticket,
-        link: "https://quantum-school-management-system.vercel.app/",
-        title: "School Management System",
-      },
-    ],
-  },
-];
+    {
+      category: "personal",
+      projects: [
+
+        {
+          category: "personal",
+          desc: "Simple dashboard where e-commerce vendors can manage there products built with Express and React",
+          img: ecom,
+          link: "https://e-commerce-dashboard-rh94.vercel.app/",
+          title: "E-commerce Dashboard",
+          code: 'https://github.com/johnpatrick254/E-Commerce-Dashboard'
+        },
+        {
+          category: "personal",
+          desc: "A ticket based helpdesk webapp built with Nextjs and php backend where users can raise support tickets",
+          img: ticket,
+          link: "https://ticket-helpdesk-sigma.vercel.app",
+          title: "Ticket Helpdesk",
+          code: 'https://github.com/johnpatrick254/ticket-helpdesk'
+        },
+        {
+          category: "personal",
+          desc: "A mobile app built with react-native/expo and firebasefor ordering food from vendors displayed on a map and pay with cards",
+          img: gomeal,
+          link: "https://github.com/johnpatrick254/GoMeals",
+          code: "https://github.com/johnpatrick254/GoMeals",
+          title: "Go Meals",
+        },
+        {
+          category: "personal",
+          desc: "A job board built with laravel that allows employers to list jobs and applicants to submit their CVs and receive email notifications",
+          img: jobboard,
+          link: "https://job-board-2evd.onrender.com/",
+          title: "Job Board",
+          code: 'https://github.com/johnpatrick254/Laravel-job-board'
+        },
+        {
+          category: "personal",
+          desc: "My submission to the frontend mentor landing page challenge built wit HTML,JS and CSS",
+          img: frontend,
+          code: "https://github.com/johnpatrick254/FrontendMentor-NewsHomePage",
+          link: "https://johnpatrick254.github.io/FrontendMentor-NewsHomePage/",
+          title: "Landing Page",
+        },
+        {
+          category: "personal",
+          desc: "A simple task manager built with React and PHP backend and mySQL",
+          img: taskmanager,
+          link: "https://light-hall-task-manager.vercel.app/",
+          title: "Task manager",
+          code: 'https://github.com/johnpatrick254/Light-Hall-Task-Manager'
+        },
+        {
+          category: "personal",
+          desc: "A clone of google's task keeper app built with React",
+          img: google,
+          link: "https://johnpatrick254.github.io/Google-Keeper-To-Do-List-Clone/",
+          title: "Google Keeper Clone",
+          code: 'https://github.com/johnpatrick254/Google-Keeper-To-Do-List-Clone'
+        },
+
+
+      ],
+    },
+    {
+      category: "collaborations",
+      projects: [
+        {
+          category: "Collaboration",
+          desc: "A simple school management system with dashboards for admins,staff and students. Built with Nestjs and Nextjs",
+          img: school,
+          link: "https://quantum-school-management-system.vercel.app/",
+          title: "School Management System",
+          code: 'https://github.com/johnpatrick254/School-Management-System-Server'
+        },
+      ],
+    },
+  ];
 
 export const contacts: ContactCardProps[] = [
   {
@@ -311,3 +366,65 @@ export const contacts: ContactCardProps[] = [
     Icon: Contact,
   },
 ];
+
+export const educations: ResumeCardProps[] = [
+  {
+    index: 0,
+    title: 'Fullstack Web Development',
+    desc: 'Studying fullstack web development through online tutorials and practice',
+    institute: "Self Learning",
+    start: 'March 2023',
+    end: null
+  },
+  {
+    index: 1,
+    title: 'Frontend Web Development',
+    desc: 'Studied web frontend development through online tutorials and practice',
+    institute: "Self Learning",
+    start: 'Dec 2022',
+    end: 'Feb 2023'
+  },
+  {
+    index: 1,
+    title: 'Bsc Biotechnology',
+    desc: 'Completed a degree in Biotechnology',
+    institute: "Masinde Muliro University of Science and Technology",
+    start: 2014,
+    end: 2018
+  },
+]
+
+export const experiences: ResumeCardProps[] = [
+  {
+    index: 0,
+    title: 'Frontend Developer',
+    desc: "Built a responsive rich text editor using Platejs",
+    institute: "Godoco",
+    start: 'Apr 2024',
+    end: 'Apr 2024'
+  },
+  {
+    index: 1,
+    title: 'React Developer',
+    desc: 'Developed a responsive rich text editor using Reactjs',
+    institute: "DoWell Research GmbH, Germany",
+    start: 'Jul 2023',
+    end: 'Apr 2024'
+  },
+  {
+    index: 2,
+    title: 'Data Entry Specialist',
+    desc: 'Managed data entry tasks with precision',
+    institute: "CloudFactory",
+    start: 'Jan 2021',
+    end: 'Dec 2023'
+  },
+  {
+    index: 3,
+    title: 'Quality Control Analyst',
+    desc: 'Conducted quality control tests and analysis',
+    institute: "Larbcorpt Laboratories and Supplies",
+    start: 'Apr 2017',
+    end: 'Aug 2019'
+  },
+]

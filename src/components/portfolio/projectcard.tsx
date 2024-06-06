@@ -9,6 +9,7 @@ export type ProjectCardProps = ServiceCardProp & {
   img: StaticImageData;
   category: string;
   link: string;
+  code: string
 };
 export default function ProjectCard({
   img,
@@ -16,9 +17,10 @@ export default function ProjectCard({
   desc,
   title,
   link,
+  code
 }: ProjectCardProps) {
   return (
-    <div className="flex h-[500px]  max-w-[330px] lg:w-[330px] flex-col rounded-3xl bg-card p-5 shadow-md ">
+    <div className="flex h-[485px]  max-w-[330px] lg:max-w-[360px] lg:w-[360px] flex-col rounded-3xl bg-card p-4 shadow-md ">
       <div className="h-[230px] w-full rounded-xl">
         <Image
           src={img}
@@ -28,7 +30,7 @@ export default function ProjectCard({
         />
       </div>
 
-      <div className="relative h-max w-full overflow-hidden pt-5">
+      <div className="relative h-1/2 flex flex-col justify-start  w-full overflow-hidden pt-5">
         <div>
           <p className="pb-2 text-[14px] font-bold uppercase tracking-wider text-mainGreen">
             {category}
@@ -38,14 +40,15 @@ export default function ProjectCard({
         <div className="z-10 py-3 text-sm">
           <p>{desc}</p>
         </div>
-        <div className="flex flex-col gap-y-3  justify-self-end text-sm">
+        <div className="flex flex-col gap-y-3 mt-auto text-sm">
           <Link
-            href=""
+            href={code}
+            target="_blank"
             className="mt-auto w-max border-b-2 border-mainGreen font-semibold"
           >
             <p className="flex items-center gap-x-4 align-middle">View code</p>
           </Link>
-          <Link href="" className="mt-auto font-semibold">
+          <Link href={link} target="_blank" className="mt-auto font-semibold">
             <p className="flex items-center gap-x-2 align-middle">
               Live site{" "}
               <span>

@@ -17,14 +17,14 @@ export function ThemeToggle() {
           onClick={() => {
             setTheme("light");
           }}
-          className="h-full w-full rotate-0 p-2 transition-all dark:-rotate-90 "
+          className="h-full w-full rotate-0 p-2 transition-all delay-100 dark:-rotate-90 "
         />
       ) : (
         <MoonIcon
           onClick={() => {
             setTheme("dark");
           }}
-          className=" h-full w-full rotate-0 p-2 transition-all dark:rotate-90 "
+          className=" h-full w-full rotate-0 p-2 transition-all delay-100 dark:rotate-0 "
         />
       )}
     </Button>

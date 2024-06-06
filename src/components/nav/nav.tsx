@@ -12,27 +12,27 @@ export const navLinks: {
 }[] = [
   {
     title: "Home",
-    path: "#hero",
+    path: "/#hero",
   },
   {
     title: "Services",
-    path: "#services",
+    path: "/#services",
   },
   {
     title: "Skills",
-    path: "#skills",
+    path: "/#skills",
   },
   {
     title: "Portfolio",
-    path: "#portfolio",
+    path: "/#portfolio",
   },
   {
     title: "Resume",
-    path: "#resume",
+    path: "/#resume",
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "/#contact",
   },
 ];
 
