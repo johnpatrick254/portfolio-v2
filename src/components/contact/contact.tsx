@@ -4,6 +4,7 @@ import ContactCard from "./contactcard";
 import { contacts } from "@/lib/constants";
 import ContactForm from "./contactform";
 import TransitionContainer from "../transitioncontainer";
+import { handleSendMail } from "@/lib/mail";
 const caveat = Caveat({ subsets: ["latin"] });
 export default function Contact() {
   return (
@@ -38,7 +39,7 @@ export default function Contact() {
 
         <div>
           <TransitionContainer variant="RIGHT">
-            <ContactForm />
+            <ContactForm handleSendMail={handleSendMail} />
           </TransitionContainer>
         </div>
       </div>

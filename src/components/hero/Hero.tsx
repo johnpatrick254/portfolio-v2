@@ -84,7 +84,12 @@ function Hero() {
                   </Link>
                 </div>
                 <span className="my-2 flex items-center justify-center rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold  uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none  xl:mx-0">
-                  <Link className="text-nowrap" href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view" download target="_blank">
+                  <Link
+                    className="text-nowrap"
+                    href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view"
+                    download
+                    target="_blank"
+                  >
                     Download CV
                   </Link>
                 </span>
@@ -105,13 +110,28 @@ function Hero() {
             </span>
 
             <span className="absolute right-14 top-10 z-0 h-[113px] w-[113px] md:h-[180px] md:w-[180px] lg:h-[150px] lg:w-[150px] xl:right-20 xl:top-16">
-              <Image quality={100} src={pt1} alt="deco" fill={true} />
+              <Image
+                quality={100}
+                src={pt1}
+                alt="deco"
+                className="h-full w-full"
+              />
             </span>
             <span className="absolute bottom-16 left-1 z-0 h-[71px] w-[71px] md:h-[150px] md:w-[150px] lg:h-[120px] lg:w-[120px] xl:bottom-20 xl:left-10">
-              <Image quality={100} src={pt2} alt="deco" fill={true} />
+              <Image
+                quality={100}
+                src={pt2}
+                alt="deco"
+                className="h-full w-full"
+              />
             </span>
             <span className="absolute bottom-10 right-8 z-0 h-[71px] w-[71px] md:h-[150px] md:w-[150px] lg:h-[120px] lg:w-[120px] xl:bottom-12 xl:right-20">
-              <Image quality={100} src={pt2} alt="deco" fill={true} />
+              <Image
+                quality={100}
+                src={pt2}
+                alt="deco"
+                className="h-full w-full"
+              />
             </span>
             <span className=" absolute bottom-28 left-8 z-20 flex items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill transition-all delay-75 ease-in-out hover:shadow-none md:bottom-40 md:left-6 md:space-x-4 md:rounded-[65px] md:px-4  md:py-2 lg:bottom-32 lg:left-0 lg:space-x-3 lg:py-1 xl:bottom-44 xl:space-x-6 ">
               <span className="w-1/2  space-x-2 text-xl leading-5 md:text-4xl lg:text-2xl xl:text-4xl">
@@ -167,13 +187,28 @@ function Hero() {
               </div>
             </span>
             <span className="absolute right-14 top-10 z-0 h-[113px] w-[113px]">
-              <Image quality={100} src={pt1} alt="deco" fill={true} />
+              <Image
+                quality={100}
+                src={pt1}
+                alt="deco"
+                className="h-full w-full"
+              />
             </span>
             <span className="absolute bottom-16 left-1 z-0 h-[71px] w-[71px]">
-              <Image quality={100} src={pt2} alt="deco" fill={true} />
+              <Image
+                quality={100}
+                src={pt2}
+                alt="deco"
+                className="h-full w-full"
+              />
             </span>
             <span className="absolute bottom-10 right-8 z-0 h-[71px] w-[71px]">
-              <Image quality={100} src={pt2} alt="deco" fill={true} />
+              <Image
+                quality={100}
+                src={pt2}
+                alt="deco"
+                className="h-full w-full"
+              />
             </span>
             <span className=" hero-pill absolute bottom-28 left-8 z-20 flex cursor-pointer items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill hover:shadow-none">
               <span className="w-1/2  space-x-2 text-xl leading-5">
@@ -244,7 +279,12 @@ function Hero() {
             </Link>
           </div>
           <span className=" hero-pill  my-2 flex items-center justify-center  space-x-2 rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none">
-            <Link className="text-nowrap" href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view" download target="_blank">
+            <Link
+              className="text-nowrap"
+              href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view"
+              download
+              target="_blank"
+            >
               Download CV
             </Link>
           </span>

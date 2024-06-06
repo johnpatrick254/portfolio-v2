@@ -4,59 +4,12 @@ import z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 import { SyncLoader } from "react-spinners";
-
-export const handleSendMail = async ({
-  senderMail,
-  senderName,
-  subject,
-  body = null,
+export default function ContactForm({
+  handleSendMail,
 }: {
-  body: string | null;
-  subject: string;
-  senderName: string;
-  senderMail: string;
-}) => {
-  const mailKey = process.env.NEXT_PUBLIC_MAIL_KEY;
-  const mailerSend = new MailerSend({
-    apiKey: mailKey!,
-  });
-  const htmlContent = `
-    <div style="width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-            <div style="text-align: center; background-color: #f8f8f8; padding: 10px 0;">
-                <h1 style="margin: 0;">Congratulations, ${senderName.split(" ")[0]} !</h1>
-            </div>
-            <div style="padding: 20px;">
-                <p>You just opened a new chapter in our professional relationship. I'm very excited at the prospect of working with you!</p>
-                <h2 style="margin-top: 20px;">What's next?</h2>
-                <p>I will carefully review your inquiry and get back to you within 24hrs.</p>
-                <p style="margin-top: 20px;">Best,<br>John Onyango</p>
-            </div>
-        </div>
-    `;
-  const sentFrom = new Sender(senderMail, senderName);
-
-  let emailParams;
-  if (body) {
-    emailParams = new EmailParams()
-      .setFrom(sentFrom)
-      .setTo([new Recipient("jpattrick538@gmail.com", "John Onyango")])
-      .setReplyTo(sentFrom)
-      .setSubject(subject)
-      .setText(body);
-  } else {
-    emailParams = new EmailParams()
-      .setFrom(new Sender("jpattrick538@gmail.com", "John Onyango"))
-      .setTo([new Recipient(senderMail, senderName)])
-      .setReplyTo(new Sender("jpattrick538@gmail.com", "John Onyango"))
-      .setSubject("Inquiry Update")
-      .setHtml(htmlContent);
-  }
-
-  await mailerSend.email.send(emailParams);
-};
-export default function ContactForm() {
+  handleSendMail: any;
+}) {
   const [isLoading, setIsLoading] = useState(false);
   const mailSchema = z.object({
     name: z.string().trim().min(1, "Required"),
@@ -91,7 +44,6 @@ export default function ContactForm() {
       await handleSendMail({ body, senderMail, senderName, subject }).then(() =>
         handleSendMail({ body: null, senderMail, senderName, subject }),
       );
-
       toast.success("Email sent!");
       setIsLoading(false);
     } catch (error) {

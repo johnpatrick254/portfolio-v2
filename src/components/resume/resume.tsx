@@ -59,7 +59,12 @@ export default function Resume() {
           </TransitionContainer>
         </div>
         <span className=" hero-pill mx-auto my-2 flex w-max items-center justify-center  space-x-2 rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none">
-          <Link className="text-nowrap" href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view" download target="_blank">
+          <Link
+            className="text-nowrap"
+            href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view"
+            download
+            target="_blank"
+          >
             Download CV
           </Link>
         </span>
