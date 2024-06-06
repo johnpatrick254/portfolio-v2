@@ -13,7 +13,14 @@ export type ResumeCardProps = {
   index: number;
 };
 
-export default function ResumeCard({ index,institute,title,start,desc,end}: ResumeCardProps) {
+export default function ResumeCard({
+  index,
+  institute,
+  title,
+  start,
+  desc,
+  end,
+}: ResumeCardProps) {
   const [show, setShow] = useState(index === 0 ? true : false);
   return (
     <div
@@ -26,23 +33,19 @@ export default function ResumeCard({ index,institute,title,start,desc,end}: Resu
         {institute}
       </p>
       {show && (
-        <div className="flex w-full flex-col space-y-3 pt-6 py-6 ">
+        <div className="flex w-full flex-col space-y-3 py-6 pt-6 ">
           <div>
             <p className={`py-1 text-xl font-bold ${caveat.className}`}>
               {title}
             </p>
             <p className="text-sm font-bold tracking-widest">
               {start} . {end}
-              {(index === 0 && end === null) && (
+              {index === 0 && end === null && (
                 <span className="uppercase text-mainGreen">Present</span>
               )}
             </p>
           </div>
-          <p className="text-base">
-           
-            {desc}
-           
-          </p>
+          <p className="text-base">{desc}</p>
         </div>
       )}
       <div

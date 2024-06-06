@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Jost } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme.provider";
 import Header from "@/components/nav/navigation";

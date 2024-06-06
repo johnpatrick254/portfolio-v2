@@ -265,84 +265,81 @@ export const projects: {
   category: "personal" | "all" | "collaborations";
   projects: ProjectCardProps[];
 }[] = [
-    {
-      category: "personal",
-      projects: [
-
-        {
-          category: "personal",
-          desc: "Simple dashboard where e-commerce vendors can manage there products built with Express and React",
-          img: ecom,
-          link: "https://e-commerce-dashboard-rh94.vercel.app/",
-          title: "E-commerce Dashboard",
-          code: 'https://github.com/johnpatrick254/E-Commerce-Dashboard'
-        },
-        {
-          category: "personal",
-          desc: "A ticket based helpdesk webapp built with Nextjs and php backend where users can raise support tickets",
-          img: ticket,
-          link: "https://ticket-helpdesk-sigma.vercel.app",
-          title: "Ticket Helpdesk",
-          code: 'https://github.com/johnpatrick254/ticket-helpdesk'
-        },
-        {
-          category: "personal",
-          desc: "A mobile app built with react-native/expo and firebasefor ordering food from vendors displayed on a map and pay with cards",
-          img: gomeal,
-          link: "https://github.com/johnpatrick254/GoMeals",
-          code: "https://github.com/johnpatrick254/GoMeals",
-          title: "Go Meals",
-        },
-        {
-          category: "personal",
-          desc: "A job board built with laravel that allows employers to list jobs and applicants to submit their CVs and receive email notifications",
-          img: jobboard,
-          link: "https://job-board-2evd.onrender.com/",
-          title: "Job Board",
-          code: 'https://github.com/johnpatrick254/Laravel-job-board'
-        },
-        {
-          category: "personal",
-          desc: "My submission to the frontend mentor landing page challenge built wit HTML,JS and CSS",
-          img: frontend,
-          code: "https://github.com/johnpatrick254/FrontendMentor-NewsHomePage",
-          link: "https://johnpatrick254.github.io/FrontendMentor-NewsHomePage/",
-          title: "Landing Page",
-        },
-        {
-          category: "personal",
-          desc: "A simple task manager built with React and PHP backend and mySQL",
-          img: taskmanager,
-          link: "https://light-hall-task-manager.vercel.app/",
-          title: "Task manager",
-          code: 'https://github.com/johnpatrick254/Light-Hall-Task-Manager'
-        },
-        {
-          category: "personal",
-          desc: "A clone of google's task keeper app built with React",
-          img: google,
-          link: "https://johnpatrick254.github.io/Google-Keeper-To-Do-List-Clone/",
-          title: "Google Keeper Clone",
-          code: 'https://github.com/johnpatrick254/Google-Keeper-To-Do-List-Clone'
-        },
-
-
-      ],
-    },
-    {
-      category: "collaborations",
-      projects: [
-        {
-          category: "Collaboration",
-          desc: "A simple school management system with dashboards for admins,staff and students. Built with Nestjs and Nextjs",
-          img: school,
-          link: "https://quantum-school-management-system.vercel.app/",
-          title: "School Management System",
-          code: 'https://github.com/johnpatrick254/School-Management-System-Server'
-        },
-      ],
-    },
-  ];
+  {
+    category: "personal",
+    projects: [
+      {
+        category: "personal",
+        desc: "Simple dashboard where e-commerce vendors can manage there products built with Express and React",
+        img: ecom,
+        link: "https://e-commerce-dashboard-rh94.vercel.app/",
+        title: "E-commerce Dashboard",
+        code: "https://github.com/johnpatrick254/E-Commerce-Dashboard",
+      },
+      {
+        category: "personal",
+        desc: "A ticket based helpdesk webapp built with Nextjs and php backend where users can raise support tickets",
+        img: ticket,
+        link: "https://ticket-helpdesk-sigma.vercel.app",
+        title: "Ticket Helpdesk",
+        code: "https://github.com/johnpatrick254/ticket-helpdesk",
+      },
+      {
+        category: "personal",
+        desc: "A mobile app built with react-native/expo and firebasefor ordering food from vendors displayed on a map and pay with cards",
+        img: gomeal,
+        link: "https://github.com/johnpatrick254/GoMeals",
+        code: "https://github.com/johnpatrick254/GoMeals",
+        title: "Go Meals",
+      },
+      {
+        category: "personal",
+        desc: "A job board built with laravel that allows employers to list jobs and applicants to submit their CVs and receive email notifications",
+        img: jobboard,
+        link: "https://job-board-2evd.onrender.com/",
+        title: "Job Board",
+        code: "https://github.com/johnpatrick254/Laravel-job-board",
+      },
+      {
+        category: "personal",
+        desc: "My submission to the frontend mentor landing page challenge built wit HTML,JS and CSS",
+        img: frontend,
+        code: "https://github.com/johnpatrick254/FrontendMentor-NewsHomePage",
+        link: "https://johnpatrick254.github.io/FrontendMentor-NewsHomePage/",
+        title: "Landing Page",
+      },
+      {
+        category: "personal",
+        desc: "A simple task manager built with React and PHP backend and mySQL",
+        img: taskmanager,
+        link: "https://light-hall-task-manager.vercel.app/",
+        title: "Task manager",
+        code: "https://github.com/johnpatrick254/Light-Hall-Task-Manager",
+      },
+      {
+        category: "personal",
+        desc: "A clone of google's task keeper app built with React",
+        img: google,
+        link: "https://johnpatrick254.github.io/Google-Keeper-To-Do-List-Clone/",
+        title: "Google Keeper Clone",
+        code: "https://github.com/johnpatrick254/Google-Keeper-To-Do-List-Clone",
+      },
+    ],
+  },
+  {
+    category: "collaborations",
+    projects: [
+      {
+        category: "Collaboration",
+        desc: "A simple school management system with dashboards for admins,staff and students. Built with Nestjs and Nextjs",
+        img: school,
+        link: "https://quantum-school-management-system.vercel.app/",
+        title: "School Management System",
+        code: "https://github.com/johnpatrick254/School-Management-System-Server",
+      },
+    ],
+  },
+];
 
 export const contacts: ContactCardProps[] = [
   {
@@ -370,61 +367,61 @@ export const contacts: ContactCardProps[] = [
 export const educations: ResumeCardProps[] = [
   {
     index: 0,
-    title: 'Fullstack Web Development',
-    desc: 'Studying fullstack web development through online tutorials and practice',
+    title: "Fullstack Web Development",
+    desc: "Studying fullstack web development through online tutorials and practice",
     institute: "Self Learning",
-    start: 'March 2023',
-    end: null
+    start: "March 2023",
+    end: null,
   },
   {
     index: 1,
-    title: 'Frontend Web Development',
-    desc: 'Studied web frontend development through online tutorials and practice',
+    title: "Frontend Web Development",
+    desc: "Studied web frontend development through online tutorials and practice",
     institute: "Self Learning",
-    start: 'Dec 2022',
-    end: 'Feb 2023'
+    start: "Dec 2022",
+    end: "Feb 2023",
   },
   {
     index: 1,
-    title: 'Bsc Biotechnology',
-    desc: 'Completed a degree in Biotechnology',
+    title: "Bsc Biotechnology",
+    desc: "Completed a degree in Biotechnology",
     institute: "Masinde Muliro University of Science and Technology",
     start: 2014,
-    end: 2018
+    end: 2018,
   },
-]
+];
 
 export const experiences: ResumeCardProps[] = [
   {
     index: 0,
-    title: 'Frontend Developer',
+    title: "Frontend Developer",
     desc: "Built a responsive rich text editor using Platejs",
     institute: "Godoco",
-    start: 'Apr 2024',
-    end: 'Apr 2024'
+    start: "Apr 2024",
+    end: "Apr 2024",
   },
   {
     index: 1,
-    title: 'React Developer',
-    desc: 'Developed a responsive rich text editor using Reactjs',
+    title: "React Developer",
+    desc: "Developed a responsive rich text editor using Reactjs",
     institute: "DoWell Research GmbH, Germany",
-    start: 'Jul 2023',
-    end: 'Apr 2024'
+    start: "Jul 2023",
+    end: "Apr 2024",
   },
   {
     index: 2,
-    title: 'Data Entry Specialist',
-    desc: 'Managed data entry tasks with precision',
+    title: "Data Entry Specialist",
+    desc: "Managed data entry tasks with precision",
     institute: "CloudFactory",
-    start: 'Jan 2021',
-    end: 'Dec 2023'
+    start: "Jan 2021",
+    end: "Dec 2023",
   },
   {
     index: 3,
-    title: 'Quality Control Analyst',
-    desc: 'Conducted quality control tests and analysis',
+    title: "Quality Control Analyst",
+    desc: "Conducted quality control tests and analysis",
     institute: "Larbcorpt Laboratories and Supplies",
-    start: 'Apr 2017',
-    end: 'Aug 2019'
+    start: "Apr 2017",
+    end: "Aug 2019",
   },
-]
+];

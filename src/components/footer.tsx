@@ -13,21 +13,39 @@ export default function Footer() {
           href={"https://github.com/johnpatrick254"}
           title="Github"
         >
-          <Image alt="github" quality={100} src={github} height={30} width={30} />
+          <Image
+            alt="github"
+            quality={100}
+            src={github}
+            height={30}
+            width={30}
+          />
         </Link>
         <Link
           href={"https://www.linkedin.com/in/john-patrick-254ke/"}
           target="_blank"
           title="LinkedIn"
         >
-          <Image alt="linkedin" quality={100} src={linkedIn} height={30} width={30} />
+          <Image
+            alt="linkedin"
+            quality={100}
+            src={linkedIn}
+            height={30}
+            width={30}
+          />
         </Link>
         <Link
           target="_blank"
           href={"https://x.com/jpattrick538"}
           title="twitter"
         >
-          <Image alt="twitter" quality={100} src={twitter} height={30} width={30} />
+          <Image
+            alt="twitter"
+            quality={100}
+            src={twitter}
+            height={30}
+            width={30}
+          />
         </Link>
       </div>
       <p className="text-xs font-semibold uppercase tracking-widest">

@@ -9,7 +9,7 @@ export type ProjectCardProps = ServiceCardProp & {
   img: StaticImageData;
   category: string;
   link: string;
-  code: string
+  code: string;
 };
 export default function ProjectCard({
   img,
@@ -17,10 +17,10 @@ export default function ProjectCard({
   desc,
   title,
   link,
-  code
+  code,
 }: ProjectCardProps) {
   return (
-    <div className="flex h-[485px]  max-w-[330px] lg:max-w-[360px] lg:w-[360px] flex-col rounded-3xl bg-card p-4 shadow-md ">
+    <div className="flex h-[485px]  max-w-[330px] flex-col rounded-3xl bg-card p-4 shadow-md lg:w-[360px] lg:max-w-[360px] ">
       <div className="h-[230px] w-full rounded-xl">
         <Image
           src={img}
@@ -30,7 +30,7 @@ export default function ProjectCard({
         />
       </div>
 
-      <div className="relative h-1/2 flex flex-col justify-start  w-full overflow-hidden pt-5">
+      <div className="relative flex h-1/2 w-full flex-col  justify-start overflow-hidden pt-5">
         <div>
           <p className="pb-2 text-[14px] font-bold uppercase tracking-wider text-mainGreen">
             {category}
@@ -40,7 +40,7 @@ export default function ProjectCard({
         <div className="z-10 py-3 text-sm">
           <p>{desc}</p>
         </div>
-        <div className="flex flex-col gap-y-3 mt-auto text-sm">
+        <div className="mt-auto flex flex-col gap-y-3 text-sm">
           <Link
             href={code}
             target="_blank"

@@ -39,7 +39,10 @@ export default function Portfolio() {
               All
             </span>
             <span
-              onClick={() => { setActive("personal"); console.log(activeProjects) }}
+              onClick={() => {
+                setActive("personal");
+                console.log(activeProjects);
+              }}
               className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${active === "personal" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
             >
               Personal
@@ -53,11 +56,9 @@ export default function Portfolio() {
           </nav>
         </TransitionContainer>
         <TransitionContainer variant="TOP">
-          <div className="flex flex-wrap items-center justify-center gap-3 md:justify-normal 2xl:flex-nowrap md:ml-5 lg:ml-32 lg:gap-6 xl:ml-60 2xl:ml-0">
-            {
-              active !== "all"
-                ?
-                activeProjects.map((project) => {
+          <div className="flex flex-wrap items-center justify-center gap-3 md:ml-5 md:justify-normal lg:ml-32 lg:gap-6 xl:ml-60 2xl:ml-0 2xl:flex-nowrap">
+            {active !== "all"
+              ? activeProjects.map((project) => {
                   return project.projects.map((app, i) => {
                     if (i < 4) {
                       return (
@@ -74,7 +75,7 @@ export default function Portfolio() {
                     }
                   });
                 })
-                : projects.map((project) => {
+              : projects.map((project) => {
                   return project.projects.map((app, i) => {
                     if (i < 3) {
                       return (

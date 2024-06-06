@@ -22,12 +22,12 @@ export default function Resume() {
         </div>
         <div className="w-full md:flex md:flex-row md:justify-center  ">
           <TransitionContainer variant="LEFT">
-            <div className="flex  w-96 md:w-[26rem] lg:w-[30rem] xl:w-[33rem] flex-col items-center justify-center p-8">
+            <div className="flex  w-96 flex-col items-center justify-center p-8 md:w-[26rem] lg:w-[30rem] xl:w-[33rem]">
               <div className=" w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">
                 <h3 className="mx-auto w-max">Education</h3>
               </div>
-              {
-                educations.map((education) => <ResumeCard
+              {educations.map((education) => (
+                <ResumeCard
                   index={education.index}
                   key={education.title}
                   desc={education.desc}
@@ -36,17 +36,16 @@ export default function Resume() {
                   institute={education.institute}
                   title={education.title}
                 />
-                )
-              }
+              ))}
             </div>
           </TransitionContainer>
           <TransitionContainer variant="RIGHT">
-            <div className="flex  w-96 md:w-[26rem] lg:w-[30rem] xl:w-[33rem] flex-col items-center justify-center p-8">
+            <div className="flex  w-96 flex-col items-center justify-center p-8 md:w-[26rem] lg:w-[30rem] xl:w-[33rem]">
               <div className="w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">
                 <h3 className="mx-auto w-max">Experience</h3>
               </div>
-              {
-                experiences.map((experience) => <ResumeCard
+              {experiences.map((experience) => (
+                <ResumeCard
                   index={experience.index}
                   key={experience.title}
                   desc={experience.desc}
@@ -55,8 +54,7 @@ export default function Resume() {
                   institute={experience.institute}
                   title={experience.title}
                 />
-                )
-              }
+              ))}
             </div>
           </TransitionContainer>
         </div>
@@ -64,7 +62,6 @@ export default function Resume() {
           <Link href="#">Download CV</Link>
         </span>
       </div>
-
     </section>
   );
 }
