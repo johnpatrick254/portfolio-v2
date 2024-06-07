@@ -272,7 +272,7 @@ export const projects: {
         category: "personal",
         desc: "Simple dashboard where e-commerce vendors can manage there products built with Express and React",
         img: ecom,
-        link: "https://e-commerce-dashboard-rh94.vercel.app/",
+        link: "https://e-commerce-dashboard-rh94.vercel.app/login",
         title: "E-commerce Dashboard",
         code: "https://github.com/johnpatrick254/E-Commerce-Dashboard",
       },
