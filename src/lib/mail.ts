@@ -39,7 +39,7 @@ export const handleSendMail = async ({
     let mailOptions = {
         from: mail,
         to: senderMail,
-        subject: subject,
+        subject: 'Re: Your Inquiry to John Onyango',
         html: htmlContent,
         text: "",
     };
