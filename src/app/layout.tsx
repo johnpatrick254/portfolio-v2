@@ -10,7 +10,7 @@ import Footer from "@/components/footer";
 const jost = Jost({ subsets: ["latin-ext"] });
 export const metadata: Metadata = {
   title: "JPO Portfolio",
-  description: "As a dedicated Full Stack Developer, I offer a commitment to delivering exceptional results and ensuring seamless functionality.",
+  description: "Welcome to the portfolio of John Onyango, a passionate Full Stack Developer with a strong focus on backend development. With extensive experience in PHP, JavaScript, TypeScript, and a diverse array of frameworks and tools, I have successfully delivered robust web and mobile applications. Explore my projects, including a Ticket Helpdesk web app, Go Meals mobile app, and a comprehensive Job Board platform. Discover how my expertise in Next.js, React Native, and Laravel can elevate your projects to new heights. Let's collaborate to bring innovative and impactful solutions to life. Contact me today to get started.",
 };
 
 export default function RootLayout({
