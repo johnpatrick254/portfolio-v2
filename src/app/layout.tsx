@@ -10,7 +10,7 @@ import Footer from "@/components/footer";
 const jost = Jost({ subsets: ["latin-ext"] });
 export const metadata: Metadata = {
   title: "JPO Portfolio",
-  description: "Best portfolio for developers",
+  description: "As a dedicated Full Stack Developer, I offer a commitment to delivering exceptional results and ensuring seamless functionality.",
 };
 
 export default function RootLayout({
