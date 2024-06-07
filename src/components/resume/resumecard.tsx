@@ -49,13 +49,13 @@ export default function ResumeCard({
         </div>
       )}
       <div
-        className="absolute bottom-[-1.3rem] right-[-1.3rem] z-10 h-10 w-10 cursor-pointer rounded-full backdrop-blur-3xl"
+        className="absolute  bottom-[-1.3rem] right-[-1.3rem] z-10 h-10 w-10 cursor-pointer rounded-full backdrop-blur-3xl"
         onClick={() => setShow(!show)}
       >
         {show ? (
           <MinusCircleIcon className="h-full w-full" />
         ) : (
-          <PlusCircleIcon className="h-full w-full" />
+            <PlusCircleIcon className="h-full w-full animate-wiggle" />
         )}
       </div>
     </div>

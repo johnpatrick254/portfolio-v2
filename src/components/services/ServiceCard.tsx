@@ -28,7 +28,7 @@ export default function ServiceCard({
           Get Quote{" "}
           <span>
             {" "}
-            <ArrowRightIcon color="hsl(153 27% 52%)" />{" "}
+            <ArrowRightIcon color="hsl(153 27% 52%)" className="animate-bounce" />{" "}
           </span>
         </p>
       </Link>

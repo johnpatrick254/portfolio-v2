@@ -41,7 +41,7 @@ export function ServiceCarousel() {
             setActiveIndex(0);
             api?.scrollTo(0);
           }}
-          className={`ease-[cubic-bezier(0.3, 0, 0.3, 1)] z-10 flex cursor-pointer border border-foreground transition-all  duration-300 ${activeIndex === 0 ? `h-3 w-3` : `h-2 w-2`} rounded-full bg-mainGreen `}
+          className={`ease-[cubic-bezier(0.3, 0, 0.3, 1)] z-10 flex cursor-pointer border border-foreground transition-all  duration-300 ${activeIndex === 0 ? `h-3 w-3 ` : `h-2 w-2`} rounded-full bg-mainGreen `}
           role="button"
           aria-label="Go to slide 1"
         ></span>
@@ -50,7 +50,7 @@ export function ServiceCarousel() {
             setActiveIndex(1);
             api?.scrollTo(1);
           }}
-          className={`ease-[cubic-bezier(0.3, 0, 0.3, 1)] z-10 flex cursor-pointer border border-foreground transition-all  duration-300 ${activeIndex === 1 ? `h-3 w-3` : `h-2 w-2`} rounded-full bg-mainGreen `}
+          className={`ease-[cubic-bezier(0.3, 0, 0.3, 1)] z-10 flex cursor-pointer border border-foreground transition-all  duration-300 ${activeIndex === 1 ? `h-3 w-3 ` : `h-2 w-2`} rounded-full bg-mainGreen `}
           role="button"
           aria-label="Go to slide 2"
         ></span>
@@ -59,7 +59,7 @@ export function ServiceCarousel() {
             setActiveIndex(2);
             api?.scrollTo(2);
           }}
-          className={`ease-[cubic-bezier(0.3, 0, 0.3, 1)] z-10 flex cursor-pointer border border-foreground transition-all duration-300 ${activeIndex === 2 ? `h-3 w-3` : `h-2 w-2`} rounded-full bg-mainGreen `}
+          className={`ease-[cubic-bezier(0.3, 0, 0.3, 1)] z-10 flex cursor-pointer border border-foreground transition-all duration-300 ${activeIndex === 2 ? `h-3 w-3 ` : `h-2 w-2`} rounded-full bg-mainGreen `}
           role="button"
           aria-label="Go to slide 3"
         ></span>
