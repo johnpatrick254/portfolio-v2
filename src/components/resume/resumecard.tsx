@@ -24,10 +24,10 @@ export default function ResumeCard({
   const [show, setShow] = useState(index === 0 ? true : false);
   return (
     <div
-      className={`relative h-20 pt-7  ${show ? "h-[250px]" : "h-max"} w-full  border-b-2 pb-5 text-2xl tracking-wider transition-all duration-200  ease-in-out ${index !== 0 ? "border-r-2" : ""} border-card-foreground dark:border-[#a3a5a7]`}
+      className={`relative flex flex-col pr-1 h-20 my-1 py-2 ${show ? "h-[230px]" : ""} w-full  border-b-2  text-2xl tracking-wider transition-all duration-200  ease-in-out ${index !== 0 ? "border-r-2" : ""} border-card-foreground dark:border-[#a3a5a7]`}
     >
       <p
-        className="cursor-pointer text-lg font-bold tracking-wider"
+        className="cursor-pointer text-lg text-left font-bold tracking-wider"
         onClick={() => setShow(!show)}
       >
         {institute}
