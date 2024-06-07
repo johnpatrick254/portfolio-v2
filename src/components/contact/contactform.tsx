@@ -41,10 +41,9 @@ export default function ContactForm({
         name: senderName,
         subject,
       } = mailSchema.parse(data);
-      await handleSendMail({ body, senderMail, senderName, subject }).then(() =>
-        handleSendMail({ body: null, senderMail, senderName, subject }),
-      );
-      toast.success("Email sent!");
+      await handleSendMail({ body, senderMail, senderName, subject }).then(async () => { await handleSendMail({ body: null, senderMail, senderName, subject }) }),
+
+        toast.success("Email sent!");
       setIsLoading(false);
     } catch (error) {
       toast.error("something went wrong");

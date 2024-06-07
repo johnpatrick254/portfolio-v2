@@ -3,18 +3,18 @@ import { text } from "stream/consumers";
 const mail = process.env.MAIL!;
 const pass = process.env.PASS!;
 export const handleSendMail = async ({
-  senderMail,
-  senderName,
-  subject,
-  body = null,
+    senderMail,
+    senderName,
+    subject,
+    body = null,
 }: {
-  body: string | null;
-  subject: string;
-  senderName: string;
-  senderMail: string;
+    body: string | null;
+    subject: string;
+    senderName: string;
+    senderMail: string;
 }) => {
-  "use server";
-  const htmlContent = `
+    "use server";
+    const htmlContent = `
     <div style="width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
             <div style="text-align: center; background-color: #f8f8f8; padding: 10px 0;">
                 <h1 style="margin: 0;">Congratulations, ${senderName.split(" ")[0]} !</h1>
@@ -28,35 +28,40 @@ export const handleSendMail = async ({
         </div>
     `;
 
-  const transporter = createTransport({
-    service: "gmail",
-    auth: {
-      user: mail,
-      pass: pass,
-    },
-  });
+    const transporter = createTransport({
+        service: "gmail",
+        auth: {
+            user: mail,
+            pass: pass,
+        },
+    });
 
-  let mailOptions = {
-    from: mail,
-    to: senderMail,
-    subject: subject,
-    html: htmlContent,
-    text: "",
-  };
-  if (body) {
-    mailOptions = {
-      from: senderMail,
-      to: mail,
-      subject: subject,
-      html: "",
-      text: body,
+    let mailOptions = {
+        from: mail,
+        to: senderMail,
+        subject: subject,
+        html: htmlContent,
+        text: "",
     };
-  }
-  transporter.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log("Email sent: " + info.response);
+    if (body) {
+        mailOptions = {
+            from: senderMail,
+            to: mail,
+            subject: subject,
+            html: "",
+            text: body,
+        };
     }
-  });
+    await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
 };
