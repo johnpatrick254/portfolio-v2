@@ -3,7 +3,7 @@ import React from "react";
 import ResumeCard from "./resumecard";
 import Link from "next/link";
 import TransitionContainer from "../transitioncontainer";
-import { educations, experiences } from "@/lib/constants";
+import { cvLink, educations, experiences } from "@/lib/constants";
 const caveat = Caveat({ subsets: ["latin"] });
 export default function Resume() {
   return (
@@ -61,7 +61,7 @@ export default function Resume() {
         <span className=" hero-pill mx-auto my-2 flex w-max items-center justify-center  space-x-2 rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none">
           <Link
             className="text-nowrap"
-            href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view"
+            href={cvLink}
             download
             target="_blank"
           >

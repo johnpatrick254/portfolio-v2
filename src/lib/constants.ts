@@ -425,3 +425,5 @@ export const experiences: ResumeCardProps[] = [
     end: "August 2019",
   },
 ];
+
+export const cvLink ="https://drive.google.com/file/d/1JeDpmgE5fQWzuc_sjSCa0x3YS-Ki3aWv/view?usp=sharing"

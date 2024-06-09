@@ -9,6 +9,7 @@ import twitter from "../../../public/images/twitter-svgrepo-com.svg";
 import Link from "next/link";
 import Divider from "../divider";
 import jp from "../../../public/images/jpo.png";
+import { cvLink } from "@/lib/constants";
 
 const caveat = Caveat({ subsets: ["latin"] });
 function Hero() {
@@ -86,7 +87,7 @@ function Hero() {
                 <span className="my-2 flex items-center justify-center rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold  uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none  xl:mx-0">
                   <Link
                     className="text-nowrap"
-                    href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view"
+                    href={cvLink}
                     download
                     target="_blank"
                   >
@@ -281,7 +282,7 @@ function Hero() {
           <span className=" hero-pill  my-2 flex items-center justify-center  space-x-2 rounded-3xl border-2 border-card-foreground bg-transparent px-6 py-3 text-sm font-bold uppercase shadow-pill transition-shadow duration-200 ease-in-out hover:shadow-none">
             <Link
               className="text-nowrap"
-              href="https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view"
+              href={cvLink}
               download
               target="_blank"
             >
