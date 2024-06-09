@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "@/providers/theme.provider";
 import Header from "@/components/nav/navigation";
 import { ToastContainer } from "react-toastify";
@@ -25,6 +27,8 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange  enableSystem>
           <Header />
+          <SpeedInsights />
+          <Analytics />
           {children}
           <Footer />
           <ToastContainer />
