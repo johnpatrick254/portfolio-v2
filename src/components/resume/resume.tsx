@@ -11,16 +11,18 @@ export default function Resume() {
       <div className="h-max w-full pb-12 pt-1 xl:px-20 2xl:px-[18%]">
         <div className="text-center uppercase tracking-wider">
           <h2 className="my-2 text-2xl font-bold">Resume</h2>
-          <div className="flex items-center justify-center space-x-3 align-middle">
-            <p className="text-mainGreen ">my</p>
-            <span
-              className={`${caveat.className} font-caveat relative bottom-1.5 text-center text-3xl font-extrabold lowercase tracking-normal `}
-            >
-              Story
-            </span>
-          </div>
+          <TransitionContainer variant="TOP">
+            <div className="flex items-center justify-center space-x-3 align-middle">
+              <p className="text-mainGreen ">my</p>
+              <span
+                className={`${caveat.className} font-caveat relative bottom-1.5 text-center text-3xl font-extrabold lowercase tracking-normal `}
+              >
+                Story
+              </span>
+            </div>
+          </TransitionContainer>
         </div>
-        <div className="w-full md:flex md:flex-row md:justify-center  ">
+        <div className="w-full md:flex md:flex-row md:justify-center mx-auto  ">
           <TransitionContainer variant="LEFT">
             <div className="flex  w-96 flex-col items-center justify-center p-8 md:w-[26rem] lg:w-[30rem] xl:w-[33rem]">
               <div className=" w-full border-b-2 border-card-foreground pb-5 text-2xl font-bold tracking-wider dark:border-[#a3a5a7]">

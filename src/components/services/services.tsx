@@ -11,10 +11,11 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="flex h-max flex-col items-center justify-center gap-y-10 overflow-hidden border-none bg-gradient-bottom pb-12 pt-[80px]"
+      className="flex h-max flex-col items-center justify-center gap-y-10 overflow-hidden border-none bg-gradient-bottom pb-12 pt-[80px] 2xl:pt-[130px]"
     >
       <div className="text-center uppercase tracking-wider">
         <h2 className="my-2 text-2xl font-bold">what i do</h2>
+        <TransitionContainer variant="LEFT">
         <div className="flex items-center justify-center space-x-3 align-middle">
           <p className="text-mainGreen ">my</p>
           <span
@@ -23,6 +24,7 @@ export default function Services() {
             Services
           </span>
         </div>
+        </TransitionContainer>
       </div>
       <TransitionContainer variant="TOP">
         <Carousel className="w-[400px] lg:hidden">

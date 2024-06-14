@@ -10,11 +10,12 @@ export default function Skills() {
         <div className="text-center uppercase tracking-wider">
           <h2 className="my-2 text-2xl font-bold">Professional Skills</h2>
         </div>
-        {skillSets.map((skillSet) => (
+        {skillSets.map((skillSet,i) => (
           <SkillSet
             key={skillSet.name}
             name={skillSet.name}
             data={skillSet.data}
+            i={parseInt(`${i}`)}
           />
         ))}
       </div>

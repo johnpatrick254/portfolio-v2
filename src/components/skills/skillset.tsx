@@ -6,19 +6,21 @@ const caveat = Caveat({ subsets: ["latin"] });
 export type SkillSetProps = {
   name: string;
   data: SkillCardProps[];
+  i?: number
 };
-export default function SkillSet({ name, data }: SkillSetProps) {
+export default function SkillSet({ name, data, i = 0 }: SkillSetProps) {
   return (
     <div className="flex w-full flex-col gap-y-12 px-2 py-5 ">
-      <div className="mx-auto flex items-center justify-center gap-x-3 align-middle">
-        <p className="text-mainGreen ">My </p>
-        <span
-          className={`${caveat.className} font-caveat relative bottom-1  text-center text-3xl font-extrabold lowercase tracking-normal `}
-        >
-          {name}
-        </span>
-      </div>
-
+      <TransitionContainer variant={(i % 2 !== 0) ? "LEFT" : "RIGHT"}>
+        <div className="mx-auto flex items-center justify-center gap-x-3 align-middle">
+          <p className="text-mainGreen ">My </p>
+          <span
+            className={`${caveat.className} font-caveat relative bottom-1  text-center text-3xl font-extrabold lowercase tracking-normal `}
+          >
+            {name}
+          </span>
+        </div>
+      </TransitionContainer>
       <TransitionContainer variant={"TOP"}>
         <div className="grid grid-flow-row grid-cols-2 gap-y-12 gap-x-20 justify-center items-center w-max mx-auto sm:grid-cols-3 md:grid-cols-4 md:px-12 xl:flex xl:flex-wrap xl:w-full xl:max-w-[990px] ">
           {data.map((skill) => (
@@ -31,6 +33,6 @@ export default function SkillSet({ name, data }: SkillSetProps) {
           ))}
         </div>
       </TransitionContainer>
-    </div>
+    </div >
   );
 }

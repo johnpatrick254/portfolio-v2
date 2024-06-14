@@ -14,14 +14,16 @@ export default function Contact() {
     >
       <div className="text-center uppercase tracking-wider ">
         <h2 className="my-2 text-2xl font-bold">Contact Me</h2>
-        <div className="flex items-center justify-center space-x-3 align-middle">
-          <p className="text-mainGreen ">Let's</p>
-          <span
-            className={`${caveat.className} font-caveat relative bottom-0.5 text-center text-2xl font-extrabold lowercase tracking-normal `}
-          >
-            Talk About Ideas
-          </span>
-        </div>
+        <TransitionContainer variant="RIGHT">
+          <div className="flex items-center justify-center space-x-3 align-middle">
+            <p className="text-mainGreen ">Let's</p>
+            <span
+              className={`${caveat.className} font-caveat relative bottom-0.5 text-center text-2xl font-extrabold lowercase tracking-normal `}
+            >
+              Talk About Ideas
+            </span>
+          </div>
+        </TransitionContainer>
       </div>
       <div className="flex w-full flex-col gap-y-6 md:flex-row md:items-center md:justify-center md:gap-6">
         <div className="flex flex-col gap-y-6 self-start">
@@ -36,7 +38,6 @@ export default function Contact() {
             ))}
           </TransitionContainer>
         </div>
-
         <div>
           <TransitionContainer variant="RIGHT">
             <ContactForm handleSendMail={handleSendMail} />

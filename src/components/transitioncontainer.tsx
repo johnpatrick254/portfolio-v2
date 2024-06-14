@@ -5,7 +5,7 @@ import React from "react";
 type TransitionVariant = "LEFT" | "RIGHT" | "TOP";
 const TransitionContainer: React.FC<{
   children: React.ReactNode;
-  variant: TransitionVariant;
+  variant?: TransitionVariant;
   className?: string;
   id?: string;
   delay?: number;

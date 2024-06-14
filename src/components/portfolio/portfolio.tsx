@@ -30,7 +30,7 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-y-3 ">
-        <TransitionContainer variant="LEFT">
+        <TransitionContainer variant="RIGHT">
           <nav className="mx-auto flex min-h-[26px] w-full justify-center gap-x-4 text-xs font-bold uppercase tracking-wider ">
             <span
               onClick={() => setActive("all")}
