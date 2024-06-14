@@ -20,13 +20,13 @@ export default function ProjectCard({
   code,
 }: ProjectCardProps) {
   return (
-    <div className="flex h-[485px]  max-w-[323px] flex-col rounded-3xl bg-card p-4 shadow-md lg:w-[360px] lg:max-w-[360px] ">
-      <div className="h-[230px] w-full rounded-xl">
+    <div className="flex h-[485px] max-w-[323px] flex-col rounded-md bg-card p-4 shadow-md lg:w-[360px] lg:max-w-[360px] ">
+      <div className="h-[230px] w-full rounded-md">
         <Image
           src={img}
           alt={title}
           quality={100}
-          className="h-full w-full rounded-xl object-cover object-center-center"
+          className="h-full w-full rounded-md object-cover object-center-center aspect-[4/3]"
         />
       </div>
 
