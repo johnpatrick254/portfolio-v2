@@ -7,7 +7,7 @@ import { cvLink, educations, experiences } from "@/lib/constants";
 const caveat = Caveat({ subsets: ["latin"] });
 export default function Resume() {
   return (
-    <section id="resume" className="h-max w-full bg-gradient-bottom ">
+    <section id="resume" className="h-max w-full bg-gradient-bottom pt-[80px]">
       <div className="h-max w-full pb-12 pt-1 xl:px-20 2xl:px-[18%]">
         <div className="text-center uppercase tracking-wider">
           <h2 className="my-2 text-2xl font-bold">Resume</h2>

@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-max w-full space-y-8 bg-gradient-center px-8 pb-6 "
+      className="h-max w-full space-y-8 bg-gradient-center px-8 pb-6 pt-[80px]"
     >
       <div className="text-center uppercase tracking-wider ">
         <h2 className="my-2 text-2xl font-bold">Contact Me</h2>

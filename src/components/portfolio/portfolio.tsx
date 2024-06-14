@@ -16,7 +16,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className=" flex h-max flex-col items-center justify-center gap-y-10 border-none bg-gradient-top px-8 pb-12"
+      className=" flex h-max flex-col items-center justify-center gap-y-10 border-none bg-gradient-top px-8 pb-12 pt-[80px]"
     >
       <div className="text-center uppercase tracking-wider">
         <h2 className="my-2 text-2xl font-bold">Portfolio</h2>

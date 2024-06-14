@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="flex h-max flex-col items-center justify-center gap-y-10 overflow-hidden border-none bg-gradient-bottom pb-12"
+      className="flex h-max flex-col items-center justify-center gap-y-10 overflow-hidden border-none bg-gradient-bottom pb-12 pt-[80px]"
     >
       <div className="text-center uppercase tracking-wider">
         <h2 className="my-2 text-2xl font-bold">what i do</h2>

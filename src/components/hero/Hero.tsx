@@ -16,7 +16,7 @@ function Hero() {
   return (
     <section
       id="hero"
-      className=" bg-gradient-top pt-[80px] xl:pt-[55px] 2xl:pt-[0] "
+      className=" bg-gradient-top pt-[80px] xl:pt-[60px] 2xl:pt-[70px] "
     >
       {
         // desktop
