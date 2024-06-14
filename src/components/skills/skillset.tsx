@@ -20,7 +20,7 @@ export default function SkillSet({ name, data }: SkillSetProps) {
       </div>
 
       <TransitionContainer variant={"TOP"}>
-        <div className="flex flex-col items-center justify-center gap-x-12 gap-y-12 md:ml-24 md:flex-row md:flex-wrap md:justify-normal">
+        <div className="grid grid-flow-row grid-cols-2 gap-y-12 gap-x-20 justify-center items-center w-max mx-auto sm:grid-cols-3 md:grid-cols-4 md:px-12 xl:flex xl:flex-wrap xl:w-full xl:max-w-[990px] ">
           {data.map((skill) => (
             <SkillCard
               key={skill.name}

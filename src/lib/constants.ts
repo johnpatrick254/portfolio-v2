@@ -218,7 +218,7 @@ export const skillSets: SkillSetProps[] = [
     name: "Mobile Development",
     data: [
       {
-        name: "React Native Expo",
+        name: "React Native",
         src: native,
         desc: "Expo and EAS are an ecosystem of tools used for developing universal native apps with React that run on Android, iOS, and the web.",
       },

@@ -20,7 +20,7 @@ export default function ProjectCard({
   code,
 }: ProjectCardProps) {
   return (
-    <div className="flex h-[485px]  max-w-[330px] flex-col rounded-3xl bg-card p-4 shadow-md lg:w-[360px] lg:max-w-[360px] ">
+    <div className="flex h-[485px]  max-w-[323px] flex-col rounded-3xl bg-card p-4 shadow-md lg:w-[360px] lg:max-w-[360px] ">
       <div className="h-[230px] w-full rounded-xl">
         <Image
           src={img}

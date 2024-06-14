@@ -20,7 +20,7 @@ function Hero() {
     >
       {
         // desktop
-        <div className="mx-auto hidden min-h-screen max-w-7xl flex-col items-center justify-start border-none align-middle xl:flex xl:flex-row xl:flex-wrap xl:justify-between xl:px-8">
+        <div className="mx-auto hidden max-w-7xl flex-col items-center justify-start border-none align-middle xl:flex xl:flex-row xl:flex-wrap xl:justify-between xl:px-8">
           <div className="space-y-2.5 pb-3 text-center text-[13px] font-bold uppercase tracking-wider md:text-[15px] xl:max-w-[46%] xl:space-y-5 xl:text-left">
             <p className="text-textcolor xl:text-base">
               Hello, <span className="text-mainGreen">my name is</span>{" "}
@@ -160,7 +160,7 @@ function Hero() {
 
       {
         //mobile
-        <div className=" mx-auto flex min-h-screen max-w-7xl flex-col items-center justify-start border-none align-middle xl:hidden xl:flex-row xl:flex-wrap xl:justify-between xl:px-8">
+        <div className=" mx-auto flex max-w-7xl flex-col items-center justify-start border-none align-middle xl:hidden xl:flex-row xl:flex-wrap xl:justify-between xl:px-8">
           <div className="space-y-2.5 pb-3 text-center text-[13px] font-bold uppercase tracking-wider">
             <p className="text-textcolor">
               Hello, <span className="text-mainGreen">my name is</span>{" "}

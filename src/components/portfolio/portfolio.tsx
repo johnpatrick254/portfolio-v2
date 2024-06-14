@@ -56,7 +56,7 @@ export default function Portfolio() {
           </nav>
         </TransitionContainer>
         <TransitionContainer variant="TOP">
-          <div className="flex flex-wrap items-center justify-center gap-3 md:ml-5 md:justify-normal lg:ml-32 lg:gap-6 xl:ml-60 2xl:ml-0 2xl:flex-nowrap">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:ml-6  md:justify-normal lg:ml-28 lg:gap-6 xl:ml-60 2xl:ml-0 2xl:flex-nowrap">
             {active !== "all"
               ? activeProjects.map((project) => {
                   return project.projects.map((app, i) => {
