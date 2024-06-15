@@ -55,6 +55,7 @@ function Hero() {
                       src={github}
                       height={35}
                       width={35}
+                      priority={true}
                     />
                   </Link>
                   <Link
@@ -68,6 +69,7 @@ function Hero() {
                       src={linkedIn}
                       height={35}
                       width={35}
+                      priority={true}
                     />
                   </Link>
                   <Link
@@ -81,6 +83,7 @@ function Hero() {
                       src={twitter}
                       height={35}
                       width={35}
+                      priority={true}
                     />
                   </Link>
                 </div>
@@ -106,6 +109,7 @@ function Hero() {
                   src={jp}
                   alt="deco"
                   className="h-auto w-auto"
+                  priority={true}
                 />
               </div>
             </span>
@@ -116,6 +120,7 @@ function Hero() {
                 src={pt1}
                 alt="deco"
                 className="h-full w-full"
+                priority={true}
               />
             </span>
             <span className="absolute bottom-16 left-1 z-0 h-[71px] w-[71px] md:h-[150px] md:w-[150px] lg:h-[120px] lg:w-[120px] xl:bottom-20 xl:left-10">
@@ -124,6 +129,7 @@ function Hero() {
                 src={pt2}
                 alt="deco"
                 className="h-full w-full"
+                priority={true}
               />
             </span>
             <span className="absolute bottom-10 right-8 z-0 h-[71px] w-[71px] md:h-[150px] md:w-[150px] lg:h-[120px] lg:w-[120px] xl:bottom-12 xl:right-20">
@@ -132,6 +138,7 @@ function Hero() {
                 src={pt2}
                 alt="deco"
                 className="h-full w-full"
+                priority={true}
               />
             </span>
             <span className=" absolute bottom-28 left-8 z-20 flex items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill transition-all delay-75 ease-in-out hover:shadow-none md:bottom-40 md:left-6 md:space-x-4 md:rounded-[65px] md:px-4  md:py-2 lg:bottom-32 lg:left-0 lg:space-x-3 lg:py-1 xl:bottom-44 xl:space-x-6 ">
@@ -184,6 +191,7 @@ function Hero() {
                   src={jp}
                   alt="deco"
                   className="h-full w-full"
+                  priority={true}
                 />
               </div>
             </span>
@@ -193,6 +201,7 @@ function Hero() {
                 src={pt1}
                 alt="deco"
                 className="h-full w-full"
+                priority={true}
               />
             </span>
             <span className="absolute bottom-16 left-1 z-0 h-[71px] w-[71px]">
@@ -201,6 +210,7 @@ function Hero() {
                 src={pt2}
                 alt="deco"
                 className="h-full w-full"
+                priority={true}
               />
             </span>
             <span className="absolute bottom-10 right-8 z-0 h-[71px] w-[71px]">
@@ -209,6 +219,7 @@ function Hero() {
                 src={pt2}
                 alt="deco"
                 className="h-full w-full"
+                priority={true}
               />
             </span>
             <span className=" hero-pill absolute bottom-28 left-8 z-20 flex cursor-pointer items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill hover:shadow-none">
@@ -250,6 +261,7 @@ function Hero() {
                 src={github}
                 height={40}
                 width={40}
+                priority={true}
               />
             </Link>
             <Link
@@ -263,6 +275,7 @@ function Hero() {
                 src={linkedIn}
                 height={40}
                 width={40}
+                priority={true}
               />
             </Link>
             <Link
@@ -276,6 +289,7 @@ function Hero() {
                 src={twitter}
                 height={40}
                 width={40}
+                priority={true}
               />
             </Link>
           </div>
