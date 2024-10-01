@@ -116,6 +116,10 @@
   }
 }
 
+html {
+ scroll-behavior: smooth;
+}
+
 .title {
   line-height: 1.2;
   color: #fff;
