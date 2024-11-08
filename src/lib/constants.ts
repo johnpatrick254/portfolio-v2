@@ -130,7 +130,7 @@ export const skillSets: SkillSetProps[] = [
     ],
   },
   {
-    name: "Gen AI",
+    name: "Gen-AI",
     data: [
       {
         name: "Neo4j ",
