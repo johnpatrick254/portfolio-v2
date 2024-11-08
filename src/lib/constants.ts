@@ -420,6 +420,14 @@ export const contacts: ContactCardProps[] = [
 export const educations: ResumeCardProps[] = [
   {
     index: 0,
+    title: "Neo4j and LLM Fundamentals",
+    desc: " Learnt how to integrate Neo4j with Generative AI models using Langchain.",
+    institute: "Neo4j GraphAcademy",
+    start: "August 2024",
+    end: "August 2024",
+  },
+  {
+    index: 1,
     title: "Fullstack Web Development",
     desc: "Studying fullstack web development through online tutorials and practice",
     institute: "Self Learning",
@@ -427,7 +435,7 @@ export const educations: ResumeCardProps[] = [
     end: null,
   },
   {
-    index: 1,
+    index: 2,
     title: "Frontend Web Development",
     desc: "Studied web frontend development through online tutorials and practice",
     institute: "Self Learning",
@@ -435,7 +443,7 @@ export const educations: ResumeCardProps[] = [
     end: "February 2023",
   },
   {
-    index: 1,
+    index: 3,
     title: "Bsc Biotechnology",
     desc: "Completed a degree in Biotechnology",
     institute: "Masinde Muliro University of Science and Technology",
@@ -447,6 +455,21 @@ export const educations: ResumeCardProps[] = [
 export const experiences: ResumeCardProps[] = [
   {
     index: 0,
+    title: "Fullstack Developer",
+    desc: "Utilized Langchain, Neo4J, Kaggle and anthropic models to develop AI powered applications running on Nodejs and Nextjs",
+    institute: "LatentAIM",
+    start: "August 2024",
+    end:null
+  },
+  {
+    index: 1,
+    title: "Fullstack Developer",
+    desc: "Developed and optimized Magento projects across multiple PHP versions, ensuring compatibility, performance improvements, and a streamlined user experience that boosted sales by 25%. Specialized in theme development, CSS optimization, and reducing database requests, achieving up to 40% improvement in Core Web Vitals and a 20% reduction in page load time",
+    institute: "Scandiweb",
+    start: "July 2024",
+    end: null
+  }, {
+    index: 2,
     title: "Frontend Developer",
     desc: "Built a responsive rich text editor using Platejs",
     institute: "Godoco",
@@ -454,7 +477,7 @@ export const experiences: ResumeCardProps[] = [
     end: "May 2024",
   },
   {
-    index: 1,
+    index: 3,
     title: "React Developer",
     desc: "Developed a responsive rich text editor using Reactjs",
     institute: "DoWell Research GmbH, Germany",
@@ -462,7 +485,7 @@ export const experiences: ResumeCardProps[] = [
     end: "April 2024",
   },
   {
-    index: 2,
+    index: 4,
     title: "Data Entry Specialist",
     desc: "Managed data entry tasks with precision",
     institute: "CloudFactory",
@@ -470,7 +493,7 @@ export const experiences: ResumeCardProps[] = [
     end: "December 2023",
   },
   {
-    index: 3,
+    index: 5,
     title: "Quality Control Analyst",
     desc: "Conducted quality control tests and analysis",
     institute: "Larbcorpt Laboratories and Supplies",
@@ -479,4 +502,4 @@ export const experiences: ResumeCardProps[] = [
   },
 ];
 
-export const cvLink = "https://drive.google.com/file/d/1o52YxN9F1bo41o8wGjfq3fhWZgvQE3BU/view?usp=sharing"
+export const cvLink = "https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view?usp=sharing"

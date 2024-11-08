@@ -24,7 +24,7 @@ export default function ResumeCard({
   const [show, setShow] = useState(index === 0 ? true : false);
   return (
     <div
-      className={`relative flex flex-col pr-1 h-20 my-1 py-2 ${show ? "h-[230px]" : ""} w-full  border-b-2  text-2xl tracking-wider transition-all duration-200  ease-in-out ${index !== 0 ? "border-r-2" : ""} border-card-foreground dark:border-[#a3a5a7]`}
+      className={`relative flex flex-col pr-1 h-20 min-h-max my-1 py-2 ${show ? "h-[230px]" : ""} w-full  border-b-2  text-2xl tracking-wider transition-all duration-200  ease-in-out ${index !== 0 ? "border-r-2" : ""} border-card-foreground dark:border-[#a3a5a7]`}
     >
       <p
         className="cursor-pointer text-lg text-left font-bold tracking-wider"
@@ -40,7 +40,7 @@ export default function ResumeCard({
             </p>
             <p className="text-sm font-bold tracking-widest">
               {start} . {end}
-              {index === 0 && end === null && (
+              {end === null && (
                 <span className="uppercase text-mainGreen">Present</span>
               )}
             </p>
@@ -55,7 +55,7 @@ export default function ResumeCard({
         {show ? (
           <MinusCircleIcon className="h-full w-full" />
         ) : (
-            <PlusCircleIcon className="h-full w-full animate-wiggle" />
+          <PlusCircleIcon className="h-full w-full animate-wiggle" />
         )}
       </div>
     </div>
