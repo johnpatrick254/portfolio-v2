@@ -318,7 +318,7 @@ export const projects: {
           desc: "Simple graph powered movie wiki with GraphRAG powered AI chatbot",
           img: chat2,
           link: "https://neo4-wiki.vercel.app/",
-          title: "AI powered movie Wiki",
+          title: "AI powered Movie Wiki",
           code: "https://github.com/johnpatrick254/neo4j-movie-wiki",
         },
         {
