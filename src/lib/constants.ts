@@ -1,5 +1,11 @@
 import { SkillSetProps } from "@/components/skills/skillset";
 import typescript from "../../public/images/typescript-svgrepo-com.svg";
+import python from "../../public/images/python-svgrepo-com.svg";
+import neo4j from "../../public/images/Neo4j.svg";
+import kaggle from "../../public/images/kaggle-svgrepo-com.svg";
+import openAI from "../../public/images/openai-svgrepo-com.svg";
+import anthropic from "../../public/images/anthropic.svg";
+import langchain from "../../public/images/langchain-seeklogo.svg";
 import php from "../../public/images/php-svgrepo-com.svg";
 import js from "../../public/images/brand-javascript-svgrepo-com.svg";
 import postgres from "../../public/images/postgresql-logo-svgrepo-com.svg";
@@ -35,6 +41,7 @@ import alpine from "../../public/images/Alpine.js.svg";
 import { ContactCardProps } from "@/components/contact/contactcard";
 import { Mail, Map, User, Contact } from "lucide-react";
 
+
 import ecom from "../../public/images/portfolio/ecommerce.png";
 import ticket from "../../public/images/portfolio/ticket.png";
 import frontend from "../../public/images/portfolio/frontendlanding.png";
@@ -44,6 +51,9 @@ import jobboard from "../../public/images/portfolio/jobboards.png";
 import school from "../../public/images/portfolio/school-landing.png";
 import taskmanager from "../../public/images/portfolio/taskmanager.png";
 import { ResumeCardProps } from "@/components/resume/resumecard";
+import chat1 from "../../public/images/portfolio/chat1.png";
+import chat2 from "../../public/images/portfolio/chat2.png";
+import chat3 from "../../public/images/portfolio/chat3.png"
 
 export const services: ServiceCardProp[] = [
   {
@@ -68,19 +78,24 @@ export const skillSets: SkillSetProps[] = [
     name: "Languages",
     data: [
       {
+        name: "Python",
+        src: python,
+        desc: "Python is a high-level, general-purpose programming language.",
+      },
+      {
         name: "Typescript",
         src: typescript,
         desc: "TypeScript is a  high-level programming language that adds static typing with optional type annotations to JavaScript.",
       },
       {
-        name: "Javascript",
-        src: js,
-        desc: "JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS.",
-      },
-      {
         name: "PHP",
         src: php,
         desc: "PHP is a general-purpose scripting language geared towards web development.",
+      },
+      {
+        name: "Javascript",
+        src: js,
+        desc: "JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS.",
       },
       {
         name: "CSS",
@@ -115,6 +130,36 @@ export const skillSets: SkillSetProps[] = [
     ],
   },
   {
+    name: "Gen AI",
+    data: [
+      {
+        name: "Neo4j ",
+        src: neo4j,
+        desc: "A graph database as a service solution for developers building graph-powered AI applications on Azure from Neo4j",
+      },
+      {
+        name: "Langchain",
+        src: langchain,
+        desc: "Kaggle is the world's largest data science community with powerful tools and resources to help you achieve your data science goals.",
+      },
+      {
+        name: "Kaggle",
+        src: kaggle,
+        desc: "Kaggle is the world's largest data science community with powerful tools and resources to help you achieve your data science goals.",
+      },
+      {
+        name: "OpenAI",
+        src: openAI,
+        desc: "",
+      },
+      {
+        name: "Anthropic",
+        src: anthropic,
+        desc: "Firebase is a set of backend cloud computing services and application development platforms provided by Google.",
+      },
+    ],
+  },
+  {
     name: "Databases",
     data: [
       {
@@ -127,7 +172,7 @@ export const skillSets: SkillSetProps[] = [
         src: sql,
         desc: "MySQL is an open-source relational database management system.",
       },
-      {
+            {
         name: "mongoDB",
         src: mongo,
         desc: "MongoDB is a NoSQL document-oriented database program that utilizes JSON-like documents with optional schemas.",
@@ -265,81 +310,89 @@ export const projects: {
   category: "personal" | "all" | "collaborations";
   projects: ProjectCardProps[];
 }[] = [
-  {
-    category: "personal",
-    projects: [
-      {
-        category: "personal",
-        desc: "Simple dashboard where e-commerce vendors can manage there products built with Express and React",
-        img: ecom,
-        link: "https://e-commerce-dashboard-rh94.vercel.app/login",
-        title: "E-commerce Dashboard",
-        code: "https://github.com/johnpatrick254/E-Commerce-Dashboard",
-      },
-      {
-        category: "personal",
-        desc: "A ticket based helpdesk webapp built with Nextjs and php backend where users can raise support tickets",
-        img: ticket,
-        link: "https://ticket-helpdesk-sigma.vercel.app",
-        title: "Ticket Helpdesk",
-        code: "https://github.com/johnpatrick254/ticket-helpdesk",
-      },
-      {
-        category: "personal",
-        desc: "A mobile app built with react-native/expo and firebasefor ordering food from vendors displayed on a map and pay with cards",
-        img: gomeal,
-        link: "https://github.com/johnpatrick254/GoMeals",
-        code: "https://github.com/johnpatrick254/GoMeals",
-        title: "Go Meals",
-      },
-      {
-        category: "personal",
-        desc: "A job board built with laravel that allows employers to list jobs and applicants to submit their CVs and receive email notifications",
-        img: jobboard,
-        link: "https://job-board-2evd.onrender.com/",
-        title: "Job Board",
-        code: "https://github.com/johnpatrick254/Laravel-job-board",
-      },
-      {
-        category: "personal",
-        desc: "My submission to the frontend mentor landing page challenge built wit HTML,JS and CSS",
-        img: frontend,
-        code: "https://github.com/johnpatrick254/FrontendMentor-NewsHomePage",
-        link: "https://johnpatrick254.github.io/FrontendMentor-NewsHomePage/",
-        title: "Landing Page",
-      },
-      {
-        category: "personal",
-        desc: "A simple task manager built with React and PHP backend and mySQL",
-        img: taskmanager,
-        link: "https://light-hall-task-manager.vercel.app/",
-        title: "Task manager",
-        code: "https://github.com/johnpatrick254/Light-Hall-Task-Manager",
-      },
-      {
-        category: "personal",
-        desc: "A clone of google's task keeper app built with React",
-        img: google,
-        link: "https://johnpatrick254.github.io/Google-Keeper-To-Do-List-Clone/",
-        title: "Google Keeper Clone",
-        code: "https://github.com/johnpatrick254/Google-Keeper-To-Do-List-Clone",
-      },
-    ],
-  },
-  {
-    category: "collaborations",
-    projects: [
-      {
-        category: "Collaboration",
-        desc: "A simple school management system with dashboards for admins,staff and students. Built with Nestjs and Nextjs",
-        img: school,
-        link: "https://quantum-school-management-system.vercel.app/",
-        title: "School Management System",
-        code: "https://github.com/johnpatrick254/School-Management-System-Server",
-      },
-    ],
-  },
-];
+    {
+      category: "personal",
+      projects: [
+        {
+          category: "personal",
+          desc: "Simple graph powered movie wiki with GraphRAG powered AI chatbot",
+          img: chat2,
+          link: "https://neo4-wiki.vercel.app/",
+          title: "AI powered movie Wiki",
+          code: "https://github.com/johnpatrick254/neo4j-movie-wiki",
+        },
+        {
+          category: "personal",
+          desc: "Simple dashboard where e-commerce vendors can manage there products built with Express and React",
+          img: ecom,
+          link: "https://e-commerce-dashboard-rh94.vercel.app/login",
+          title: "E-commerce Dashboard",
+          code: "https://github.com/johnpatrick254/E-Commerce-Dashboard",
+        },
+        {
+          category: "personal",
+          desc: "A ticket based helpdesk webapp built with Nextjs and php backend where users can raise support tickets",
+          img: ticket,
+          link: "https://ticket-helpdesk-sigma.vercel.app",
+          title: "Ticket Helpdesk",
+          code: "https://github.com/johnpatrick254/ticket-helpdesk",
+        },
+        {
+          category: "personal",
+          desc: "A mobile app built with react-native/expo and firebasefor ordering food from vendors displayed on a map and pay with cards",
+          img: gomeal,
+          link: "https://github.com/johnpatrick254/GoMeals",
+          code: "https://github.com/johnpatrick254/GoMeals",
+          title: "Go Meals",
+        },
+        {
+          category: "personal",
+          desc: "A job board built with laravel that allows employers to list jobs and applicants to submit their CVs and receive email notifications",
+          img: jobboard,
+          link: "https://job-board-2evd.onrender.com/",
+          title: "Job Board",
+          code: "https://github.com/johnpatrick254/Laravel-job-board",
+        },
+        {
+          category: "personal",
+          desc: "My submission to the frontend mentor landing page challenge built wit HTML,JS and CSS",
+          img: frontend,
+          code: "https://github.com/johnpatrick254/FrontendMentor-NewsHomePage",
+          link: "https://johnpatrick254.github.io/FrontendMentor-NewsHomePage/",
+          title: "Landing Page",
+        },
+        {
+          category: "personal",
+          desc: "A simple task manager built with React and PHP backend and mySQL",
+          img: taskmanager,
+          link: "https://light-hall-task-manager.vercel.app/",
+          title: "Task manager",
+          code: "https://github.com/johnpatrick254/Light-Hall-Task-Manager",
+        },
+        {
+          category: "personal",
+          desc: "A clone of google's task keeper app built with React",
+          img: google,
+          link: "https://johnpatrick254.github.io/Google-Keeper-To-Do-List-Clone/",
+          title: "Google Keeper Clone",
+          code: "https://github.com/johnpatrick254/Google-Keeper-To-Do-List-Clone",
+        },
+      ],
+    },
+    {
+      category: "collaborations",
+      projects: [
+        {
+          category: "Collaboration",
+          desc: "A simple school management system with dashboards for admins,staff and students. Built with Nestjs and Nextjs",
+          img: school,
+          link: "https://quantum-school-management-system.vercel.app/",
+          title: "School Management System",
+          code: "https://github.com/johnpatrick254/School-Management-System-Server",
+        },
+      ],
+    },
+  ];
 
 export const contacts: ContactCardProps[] = [
   {
@@ -426,4 +479,4 @@ export const experiences: ResumeCardProps[] = [
   },
 ];
 
-export const cvLink ="https://drive.google.com/file/d/1JeDpmgE5fQWzuc_sjSCa0x3YS-Ki3aWv/view?usp=sharing"
+export const cvLink = "https://drive.google.com/file/d/1o52YxN9F1bo41o8wGjfq3fhWZgvQE3BU/view?usp=sharing"
