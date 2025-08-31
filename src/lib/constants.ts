@@ -455,21 +455,30 @@ export const educations: ResumeCardProps[] = [
 export const experiences: ResumeCardProps[] = [
   {
     index: 0,
+    title: "Fullstack AI integration Developer",
+    desc: "Built an AI powered social events aggragator site using FastAPI server and Nextjs client",
+    institute: "Decko",
+    start: "January 2025",
+    end:null
+  },
+   {
+    index: 1,
+    title: "Fullstack Developer",
+    desc: "Developed and optimized E-commerce projects across multiple platforms like Shopify, Magento and custom Nextjs/Remix based e-commerce platforms, ensuring compatibility, performance improvements, and a streamlined user experience that boosted sales by 25%. Specialized in theme development, CSS optimization, and reducing database requests, achieving up to 40% improvement in Core Web Vitals and a 20% reduction in page load time",
+    institute: "Scandiweb",
+    start: "July 2024",
+    end: null
+  },
+   {
+    index: 2,
     title: "Fullstack Developer",
     desc: "Utilized Langchain, Neo4J, Kaggle and anthropic models to develop AI powered applications running on Nodejs and Nextjs",
     institute: "LatentAIM",
     start: "August 2024",
-    end:null
+    end:"December 2024"
   },
   {
-    index: 1,
-    title: "Fullstack Developer",
-    desc: "Developed and optimized Magento projects across multiple PHP versions, ensuring compatibility, performance improvements, and a streamlined user experience that boosted sales by 25%. Specialized in theme development, CSS optimization, and reducing database requests, achieving up to 40% improvement in Core Web Vitals and a 20% reduction in page load time",
-    institute: "Scandiweb",
-    start: "July 2024",
-    end: null
-  }, {
-    index: 2,
+    index: 3,
     title: "Frontend Developer",
     desc: "Built a responsive rich text editor using Platejs",
     institute: "Godoco",
@@ -477,7 +486,7 @@ export const experiences: ResumeCardProps[] = [
     end: "May 2024",
   },
   {
-    index: 3,
+    index: 4,
     title: "React Developer",
     desc: "Developed a responsive rich text editor using Reactjs",
     institute: "DoWell Research GmbH, Germany",
@@ -485,7 +494,7 @@ export const experiences: ResumeCardProps[] = [
     end: "April 2024",
   },
   {
-    index: 4,
+    index: 5,
     title: "Data Entry Specialist",
     desc: "Managed data entry tasks with precision",
     institute: "CloudFactory",
@@ -493,7 +502,7 @@ export const experiences: ResumeCardProps[] = [
     end: "December 2023",
   },
   {
-    index: 5,
+    index: 6,
     title: "Quality Control Analyst",
     desc: "Conducted quality control tests and analysis",
     institute: "Larbcorpt Laboratories and Supplies",
