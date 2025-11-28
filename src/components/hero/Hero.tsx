@@ -143,7 +143,7 @@ function Hero() {
             </span>
             <span className=" absolute bottom-28 left-8 z-20 flex items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill transition-all delay-75 ease-in-out hover:shadow-none md:bottom-40 md:left-6 md:space-x-4 md:rounded-[65px] md:px-4  md:py-2 lg:bottom-32 lg:left-0 lg:space-x-3 lg:py-1 xl:bottom-44 xl:space-x-6 ">
               <span className="w-1/2  space-x-2 text-xl leading-5 md:text-4xl lg:text-2xl xl:text-4xl">
-                <span>2</span>
+                <span>4</span>
                 <span className="text-mainGreen ">+</span>
               </span>
               <span className="flex flex-col text-[10px] md:text-base lg:text-[12px] xl:text-lg">
@@ -153,7 +153,7 @@ function Hero() {
             </span>
             <span className=" absolute bottom-20 right-8 z-20 flex items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill transition-all delay-75 ease-in-out hover:shadow-none md:bottom-32 md:space-x-4 md:rounded-[65px] md:px-4 md:py-2 lg:bottom-20 lg:right-2 lg:space-x-3 lg:py-1 xl:bottom-36 xl:right-6 xl:space-x-6">
               <span className="w-1/2 space-x-2 text-xl leading-5 md:text-4xl  lg:text-2xl xl:text-4xl">
-                <span>7</span>
+                <span>12</span>
                 <span className="text-mainGreen ">+</span>
               </span>
               <span className="xl:text-lg]  flex flex-col text-[10px] md:text-base lg:text-[12px] xl:text-lg">
