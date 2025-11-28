@@ -224,7 +224,7 @@ function Hero() {
             </span>
             <span className=" hero-pill absolute bottom-28 left-8 z-20 flex cursor-pointer items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill hover:shadow-none">
               <span className="w-1/2  space-x-2 text-xl leading-5">
-                <span>2</span>
+                <span>4</span>
                 <span className="text-mainGreen ">+</span>
               </span>
               <span className="flex flex-col text-[10px] ">
@@ -234,7 +234,7 @@ function Hero() {
             </span>
             <span className=" hero-pill absolute bottom-20 right-8 z-20 flex cursor-pointer items-center justify-center space-x-2 rounded-3xl border-2 border-card-foreground bg-background px-4 py-1 font-bold shadow-pill hover:shadow-none">
               <span className="w-1/2 space-x-2 text-xl leading-5">
-                <span>7</span>
+                <span>12</span>
                 <span className="text-mainGreen ">+</span>
               </span>
               <span className="flex flex-col text-[10px] ">
