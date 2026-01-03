@@ -511,4 +511,4 @@ export const experiences: ResumeCardProps[] = [
   },
 ];
 
-export const cvLink = "https://drive.google.com/file/d/1rbPsP9C3TfvD5-tclCVSEP28_Lp8vwV1/view?usp=sharing"
+export const cvLink = "https://drive.google.com/file/d/1HL52Z2-SDog7kecWbw1muU8p-KdJSMAX/view?usp=sharing"
