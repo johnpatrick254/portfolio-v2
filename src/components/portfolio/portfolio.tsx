@@ -7,8 +7,8 @@ import Link from "next/link";
 import TransitionContainer from "../transitioncontainer";
 const caveat = Caveat({ subsets: ["latin"] });
 export default function Portfolio() {
-  const [active, setActive] = useState<"all" | "collaborations" | "personal">(
-    "all",
+  const [active, setActive] = useState<"all" | "collaborations" | "personal" | "professional">(
+    "professional",
   );
   const activeProjects = projects.filter(
     (project) => project.category === active,
@@ -32,12 +32,13 @@ export default function Portfolio() {
       <div className="flex w-full flex-col items-center justify-center gap-y-3 ">
         <TransitionContainer variant="RIGHT">
           <nav className="mx-auto flex min-h-[26px] w-full justify-center gap-x-4 text-xs font-bold uppercase tracking-wider ">
-            <span
-              onClick={() => setActive("all")}
-              className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${active === "all" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
+           
+           <span
+              onClick={() => setActive("professional")}
+              className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${active === "professional" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
             >
-              All
-            </span>
+              Professional
+            </span> 
             <span
               onClick={() => {
                 setActive("personal");
@@ -52,6 +53,12 @@ export default function Portfolio() {
               className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${active === "collaborations" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
             >
               Collaborations
+            </span>
+            <span
+              onClick={() => setActive("all")}
+              className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${active === "all" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
+            >
+              All
             </span>
           </nav>
         </TransitionContainer>

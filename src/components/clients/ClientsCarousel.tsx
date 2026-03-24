@@ -7,9 +7,10 @@ const caveat = Caveat({ subsets: ["latin"] });
 
 const clients = [
   { name: "New York Times", logoPath: "/images/logo/New_York_Times.png" },
-  { name: "Bechtle", logoPath: "/images/logo/Bechtle.svg" },
-  { name: "Jola USA", logoPath: "/images/logo/jola.svg" },
   { name: "Scandiweb", logoPath: "/images/logo/Scandiweb.png" },
+  { name: "Bechtle", logoPath: "/images/logo/Bechtle.svg" },
+  { name: "JRDUNN", logoPath: "/images/logo/jrdunn.png" },
+  { name: "Jola USA", logoPath: "/images/logo/jola.svg" },
   { name: "Two in the Loop", logoPath: "/images/logo/two-inthe-loop.svg" },
   { name: "Decko.app", domain: "decko.app" },
 ];
@@ -17,13 +18,10 @@ const clients = [
 function ClientLogo({
   name,
   logoPath,
-  domain,
 }: {
   name: string;
   logoPath?: string;
-  domain?: string;
 }) {
-  const [failed, setFailed] = useState(false);
 
   if (logoPath) {
     return (
@@ -52,7 +50,6 @@ export default function ClientsCarousel() {
   return (
     <section className="flex flex-col items-center justify-center gap-y-8 overflow-hidden border-none bg-gradient-bottom pt-10 2xl:pt-16">
       <div className="text-center uppercase tracking-wider">
-        <h2 className="my-2 text-2xl font-bold">previous clients</h2>
         <TransitionContainer variant="LEFT">
           <div className="flex items-center justify-center space-x-3 align-middle">
             <p className="text-mainGreen">Top companies </p>
@@ -83,7 +80,7 @@ export default function ClientsCarousel() {
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 <div className="flex h-28 w-52 items-center justify-center rounded-xl bg-gradient-bottom">
-                  <ClientLogo name={client.name} logoPath={client.logoPath} domain={client.domain} />
+                  <ClientLogo name={client.name} logoPath={client.logoPath} />
                 </div>
 
                 {/* tooltip */}

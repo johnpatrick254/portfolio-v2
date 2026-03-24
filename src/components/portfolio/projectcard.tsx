@@ -41,22 +41,34 @@ export default function ProjectCard({
           <p>{desc}</p>
         </div>
         <div className="mt-auto flex flex-col gap-y-3 text-sm">
-          <Link
-            href={code}
-            target="_blank"
-            className="mt-auto w-max border-b-2 border-mainGreen font-semibold"
-          >
-            <p className="flex items-center gap-x-4 align-middle">View code</p>
-          </Link>
-          <Link href={link} target="_blank" className="mt-auto font-semibold">
-            <p className="flex items-center gap-x-2 align-middle">
-              Live site{" "}
-              <span>
-                {" "}
-                <ArrowRightIcon color="hsl(153 27% 52%)" className="animate-bounce" />
-              </span>
-            </p>
-          </Link>
+          {
+            code != "#"
+            &&
+            (
+              <Link
+                href={code}
+                target="_blank"
+                className="mt-auto w-max border-b-2 border-mainGreen font-semibold"
+              >
+                <p className="flex items-center gap-x-4 align-middle">View code</p>
+              </Link>
+            )
+          }
+          {
+            link != "#"
+            &&
+            (
+              <Link href={link} target="_blank" className="mt-auto font-semibold">
+                <p className="flex items-center gap-x-2 align-middle">
+                  Live site{" "}
+                  <span>
+                    {" "}
+                    <ArrowRightIcon color="hsl(153 27% 52%)" className="animate-bounce" />
+                  </span>
+                </p>
+              </Link>
+            )
+          }
         </div>
         <Image
           alt="deco"

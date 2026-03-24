@@ -9,8 +9,8 @@ export default function page() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const search =
-    (searchParams.get("filter") as "all" | "collaborations" | "personal") ??
-    "all";
+    (searchParams.get("filter") as "all" | "collaborations" | "personal" | "professional") ??
+    "professional";
   const activeProjects = projects.filter(
     (project) => project.category === search,
   );
@@ -18,11 +18,11 @@ export default function page() {
     <section className="flex min-h-screen  w-full bg-gradient-center pb-16 pt-24 ">
       <div className="mx-auto  flex w-full max-w-7xl flex-col items-center gap-y-3 md:ml-12  lg:ml-36 2xl:ml-[20%] 3xl:ml-[28%]">
         <nav className="mr-[20%] flex min-h-[26px] w-full justify-center gap-x-4 text-xs font-bold uppercase tracking-wider ">
-          <span
-            onClick={() => router.push("/projects?filter=all")}
-            className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${search === "all" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
+           <span
+            onClick={() => router.push("/projects?filter=professional")}
+            className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${search === "professional" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
           >
-            All
+            Professional
           </span>
           <span
             onClick={() => router.push("/projects?filter=personal")}
@@ -35,6 +35,12 @@ export default function page() {
             className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${search === "collaborations" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
           >
             Collaborations
+          </span>
+           <span
+            onClick={() => router.push("/projects?filter=all")}
+            className={`cursor-pointer pb-2 transition-all duration-100 ease-linear ${search === "all" ? "border-b-2 border-mainGreen text-mainGreen " : ""}`}
+          >
+            All
           </span>
         </nav>
 

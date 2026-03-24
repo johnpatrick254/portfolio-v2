@@ -38,6 +38,9 @@ import firebase from "../../public/images/firebase-svgrepo-com.svg";
 import { ServiceCardProp } from "@/components/services/ServiceCard";
 import { ProjectCardProps } from "@/components/portfolio/projectcard";
 import alpine from "../../public/images/Alpine.js.svg";
+import java from "../../public/images/java-ar21.svg";
+import magento from "../../public/images/Magento.svg";
+import shopify from "../../public/images/shopify.svg";
 import { ContactCardProps } from "@/components/contact/contactcard";
 import { Mail, Map, User, Contact } from "lucide-react";
 
@@ -54,6 +57,15 @@ import { ResumeCardProps } from "@/components/resume/resumecard";
 import chat1 from "../../public/images/portfolio/chat1.png";
 import chat2 from "../../public/images/portfolio/chat2.png";
 import chat3 from "../../public/images/portfolio/chat3.png"
+import jrdunn from "../../public/images/portfolio/jrdunn.png"
+import decko from "../../public/images/portfolio/decko.png"
+import nytstore from "../../public/images/portfolio/nytstore.png"
+import bechtle from "../../public/images/portfolio/bechtle.png"
+import pitchchef from "../../public/images/portfolio/pitchchef.png"
+
+
+
+
 
 export const services: ServiceCardProp[] = [
   {
@@ -101,6 +113,11 @@ export const skillSets: SkillSetProps[] = [
         name: "CSS",
         src: css,
         desc: "Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML.",
+      },
+      {
+        name: "Java",
+        src: java,
+        desc: "Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.",
       },
     ],
   },
@@ -260,10 +277,25 @@ export const skillSets: SkillSetProps[] = [
     ],
   },
   {
+    name: "E-Commerce",
+    data: [
+      {
+        name: "Magento",
+        src: magento,
+        desc: "Magento is an open-source e-commerce platform written in PHP, providing online merchants with a flexible shopping cart system.",
+      },
+      {
+        name: "Shopify",
+        src: shopify,
+        desc: "Shopify is a commerce platform that allows anyone to set up an online store and sell their products.",
+      },
+    ],
+  },
+  {
     name: "Mobile Development",
     data: [
       {
-        name: "React Native",
+        name: "React Native Expo",
         src: native,
         desc: "Expo and EAS are an ecosystem of tools used for developing universal native apps with React that run on Android, iOS, and the web.",
       },
@@ -307,7 +339,7 @@ export const skillSets: SkillSetProps[] = [
 ];
 
 export const projects: {
-  category: "personal" | "all" | "collaborations";
+  category: "personal" | "all" | "collaborations" | "professional";
   projects: ProjectCardProps[];
 }[] = [
     {
@@ -377,6 +409,51 @@ export const projects: {
           title: "Google Keeper Clone",
           code: "https://github.com/johnpatrick254/Google-Keeper-To-Do-List-Clone",
         },
+      ],
+    },
+    {
+      category: "professional",
+      projects: [
+        {
+          category: "professional",
+          desc: "High-volume jewelry e-commerce store with a 200K+ product catalogue, built on a custom Alpine.js Satoshi theme with third-party integrations including Discount Ninja and Judge.me. Built at Scandiweb.",
+          img: jrdunn,
+          link: "https://jrdunn.com/",
+          title: "JRDUNN Shopify store",
+          code: "#",
+        },
+        {
+          category: "professional",
+          desc: "Real-time AI voice interview platform built with Next.js, OpenAI Realtime API, and WebRTC. Built at LatentAIM.",
+          img: pitchchef,
+          link: "https://pitchchef.vercel.app/",
+          title: "PitchChef: AI Interview Platform",
+          code: "#",
+        },
+        {
+          category: "professional",
+          desc: "AI-powered event aggregator that scrapes data from multiple sources and delivers personalized event recommendations. Built with Python and Next.js at Decko.",
+          img: decko,
+          link: "https://www.decko.app/",
+          title: "Decko: AI Events App",
+          code: "#",
+        },
+        {
+          category: "professional",
+          desc: "Shopify storefront built on a customized Dawn theme. Built at Scandiweb.",
+          img: nytstore,
+          link: "https://store.nytimes.com/",
+          title: "New York Times shopify store",
+          code: "#",
+        },
+        {
+          category: "professional",
+          desc: "Headless B2B storefront built with Next.js and GraphQL, using an internal component library. Built at Scandiweb.",
+          img: bechtle,
+          link: "https://www.bechtle.com/de-en",
+          title: "Bechtle B2B Commerce",
+          code: "#",
+        }   
       ],
     },
     {
