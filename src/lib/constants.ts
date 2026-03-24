@@ -455,59 +455,51 @@ export const educations: ResumeCardProps[] = [
 export const experiences: ResumeCardProps[] = [
   {
     index: 0,
-    title: "Fullstack AI integration Developer",
-    desc: "Built an AI powered social events aggragator site using FastAPI server and Nextjs client",
-    institute: "Decko",
-    start: "January 2025",
-    end:null
+    title: "Fullstack Developer",
+    desc: "Built an AI-powered knowledgebase application using Next.js, NestJS, n8n, and custom GPTs. Built an AI-powered property search tool that analyzed properties scraped from listing sites. Designed and built a fully functional multi-dashboard rental management system for tenants, vendors, and admins using Next.js and NestJS.",
+    institute: "Two In The Loop",
+    start: "October 2025",
+    end: "January 2026",
   },
-   {
+  {
     index: 1,
     title: "Fullstack Developer",
-    desc: "Developed and optimized E-commerce projects across multiple platforms like Shopify, Magento and custom Nextjs/Remix based e-commerce platforms, ensuring compatibility, performance improvements, and a streamlined user experience that boosted sales by 25%. Specialized in theme development, CSS optimization, and reducing database requests, achieving up to 40% improvement in Core Web Vitals and a 20% reduction in page load time",
-    institute: "Scandiweb",
-    start: "July 2024",
-    end: null
+    desc: "Built an AI-powered events application using Python and Next.js that scrapes event data from multiple sources. Implemented AI enrichment to process scraped data and curate personalized event lists based on individual user preferences.",
+    institute: "Decko",
+    start: "January 2025",
+    end: "December 2025",
   },
-   {
+  {
     index: 2,
     title: "Fullstack Developer",
-    desc: "Utilized Langchain, Neo4J, Kaggle and anthropic models to develop AI powered applications running on Nodejs and Nextjs",
-    institute: "LatentAIM",
-    start: "August 2024",
-    end:"December 2024"
+    desc: "Developed custom Shopify stores, engineered solutions to overcome Shopify's 5000-product limit for filters, and built custom PLP, PDP, and search pages. Optimized Magento projects across multiple PHP versions, achieving performance improvements that boosted sales by 25%. Specialized in theme development and CSS optimization, reducing page load times by 20% and improving Core Web Vitals by 40%.",
+    institute: "Scandiweb",
+    start: "July 2024",
+    end: "January 2026",
   },
   {
     index: 3,
+    title: "Fullstack Developer",
+    desc: "Utilized Langchain, Neo4J, Kaggle and Anthropic models to develop AI-powered applications running on Node.js and Next.js.",
+    institute: "LatentAIM",
+    start: "August 2024",
+    end: "December 2024",
+  },
+  {
+    index: 4,
     title: "Frontend Developer",
-    desc: "Built a responsive rich text editor using Platejs",
+    desc: "Leveraged slate-based framework Platejs, SSR framework Remix.js and TailwindCSS to build a responsive rich text editor for Godoco's platform.",
     institute: "Godoco",
     start: "April 2024",
     end: "May 2024",
   },
   {
-    index: 4,
+    index: 5,
     title: "React Developer",
-    desc: "Developed a responsive rich text editor using Reactjs",
+    desc: "Developed a responsive rich text editor from scratch using React.js and CSS3.",
     institute: "DoWell Research GmbH, Germany",
     start: "July 2023",
     end: "April 2024",
-  },
-  {
-    index: 5,
-    title: "Data Entry Specialist",
-    desc: "Managed data entry tasks with precision",
-    institute: "CloudFactory",
-    start: "January 2021",
-    end: "December 2023",
-  },
-  {
-    index: 6,
-    title: "Quality Control Analyst",
-    desc: "Conducted quality control tests and analysis",
-    institute: "Larbcorpt Laboratories and Supplies",
-    start: "April 2017",
-    end: "August 2019",
   },
 ];
 
