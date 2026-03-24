@@ -120,6 +120,11 @@ html {
  scroll-behavior: smooth;
 }
 
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 .title {
   line-height: 1.2;
   color: #fff;

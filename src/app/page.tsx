@@ -4,12 +4,14 @@ import Portfolio from "@/components/portfolio/portfolio";
 import Resume from "@/components/resume/resume";
 import Services from "@/components/services/services";
 import Skills from "@/components/skills/skills";
+import ClientsCarousel from "@/components/clients/ClientsCarousel";
 
 export default function Home() {
   return (
     <main className="flex w-full snap-center snap-always flex-col items-center justify-start overflow-x-hidden scroll-smooth">
       <Hero />
       <Services />
+      <ClientsCarousel />
       <Skills />
       <Portfolio />
       <Resume />

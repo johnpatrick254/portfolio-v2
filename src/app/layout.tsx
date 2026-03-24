@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={`${jost.className} flex min-h-screen flex-col items-center antialiased `}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange  enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" disableTransitionOnChange >
           <Header />
           <SpeedInsights />
           <Analytics />
