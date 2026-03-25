@@ -12,8 +12,8 @@ export default function Home() {
       <Hero />
       <Services />
       <ClientsCarousel />
-      <Skills />
       <Portfolio />
+      <Skills />
       <Resume />
       <Contact />
     </main>

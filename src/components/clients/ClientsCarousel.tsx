@@ -48,7 +48,7 @@ export default function ClientsCarousel() {
   const isPaused = hoveredIndex !== null;
 
   return (
-    <section className="flex flex-col items-center justify-center gap-y-8 overflow-hidden border-none bg-gradient-bottom pt-10 2xl:pt-16">
+    <section className="flex flex-col items-center justify-center gap-y-8 overflow-hidden border-none bg-gradient-center pt-10 2xl:pt-16">
       <div className="text-center uppercase tracking-wider">
         <TransitionContainer variant="LEFT">
           <div className="flex items-center justify-center space-x-3 align-middle">
